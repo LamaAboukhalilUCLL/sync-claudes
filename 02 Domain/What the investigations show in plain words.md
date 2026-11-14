@@ -32,7 +32,7 @@
 |---|---|---|
 | FLEX (274 tests) | Burned single fuel droplets in different mixes of oxygen, nitrogen, carbon dioxide and helium, 12 to 34 % oxygen | **Aim:** map when a flame goes out, and how well extinguishing gases such as CO2 work in space |
 | FLEX-2, CFI (95 rows) | More fuels and pressures | Mostly about engines and fuels on Earth |
-| Two ground studies using FLEX data | Computer work on "cool flames" | **Result stated:** a flame can drop to a much lower temperature and keep burning almost invisibly instead of going out. FLEX is where these cool flames were discovered in 2012 (stated in the CFI-G record) |
+| Two ground studies using FLEX data | Computer work on "cool flames" | **Result stated:** a flame can drop to a much lower temperature and keep burning almost invisibly instead of going out. The CFI-G record says these cool flames "were discovered in 2012" |
 
 ## Group 4: gas flames (basic flame science)
 ACME Flame Design, CFI-G, s-Flame, CLD Flame, E-FIELD Flames, SLICE, SPICE and one ground study. Together they are over 1,200 table rows, the largest part of the data.
