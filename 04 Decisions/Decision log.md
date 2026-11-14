@@ -55,8 +55,14 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Changes D7:** the product code no longer ends up in the vault's `app/` folder.
 - **Consequence, not yet done:** everything a judge needs to trace a number must be in `Data-Beyond-Space` before submission: the PSI snapshot with its manifest, the scripts, the app, the references and the AI acknowledgements. Today the snapshot and two scripts are only in the vault's `app/`. Moving them is a step that waits for Lama's go.
 
+## D11 - Direction for the central insight: Earth-gravity screening
+- **When:** 14 Nov 2026
+- **Decided by:** Lama
+- **What:** the central insight will be about row A of [[NASA stated fire safety needs]]: Earth-gravity material screening may miss the fire risk. Lama chose it from the list of NASA's stated needs.
+- **Still to do:** Lama writes the one-sentence insight in her own words; it is then checked against the snapshot.
+
 ## Open decisions
-- **Central insight** the project is built around (Step 1).
+- **Central insight sentence** (direction chosen in D11; the sentence itself is still to be written by Lama).
 - **Scope:** which views are must-have (Step 1 / Step 3).
 - **Tech stack** for the app (Step 3).
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
