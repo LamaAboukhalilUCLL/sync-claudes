@@ -1,6 +1,6 @@
 # Step 1 - central insight decided
 
-**Date:** Sat 14 Nov 2026, 23:25 · **By:** Lama decided; Claude Code (VS Code) recorded.
+**Date:** Sat 14 Nov 2026, 22:40 · **By:** Lama decided; Claude Code (VS Code) recorded.
 
 ## What was decided
 D12 in [[Decision log]]:

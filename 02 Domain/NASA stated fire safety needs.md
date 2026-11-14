@@ -1,6 +1,6 @@
 # NASA's stated fire safety needs
 
-**Added:** Sat 14 Nov 2026, 22:10 · **By:** Claude Code (VS Code), web research asked for by Lama.
+**Added:** Sat 14 Nov 2026 · **By:** Claude Code (VS Code), web research asked for by Lama.
 
 Input for the central insight (Step 1). It lists what NASA itself says it needs, what our PSI snapshot holds on each need, and what data exists outside PSI. **It proposes no insight; that is Lama's.**
 

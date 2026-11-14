@@ -1,6 +1,6 @@
 # What the investigations show, in plain words
 
-**Added:** Sat 14 Nov 2026, 23:00 · **By:** Claude Code (VS Code), asked for by Lama. Written for a reader with no combustion background. Facts only; it proposes no insight.
+**Added:** Sat 14 Nov 2026 · **By:** Claude Code (VS Code), asked for by Lama. Written for a reader with no combustion background. Facts only; it proposes no insight.
 
 **Source:** the 24 records and 22 tables in `app/raw/`. One caution: most PSI records describe what an experiment **set out to do** and what its authors **expected**. Only a few state a result. Each line below says which it is.
 
