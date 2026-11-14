@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sat 14 Nov 2026, 21:25 (Claude Code, VS Code)_
+_Last updated: Sat 14 Nov 2026, 22:10 (Claude Code, VS Code)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -8,6 +8,7 @@ _Last updated: Sat 14 Nov 2026, 21:25 (Claude Code, VS Code)_
 - [x] Step 1b - external briefs checked against the snapshot ([[2026-11-14 Step 1b vetting the external briefs]])
 - [x] Side task - publication abstracts, outside the steps ([[2026-11-14 Side task publication abstracts]])
 - [x] Step 1c - Victor's work reviewed against the snapshot; D10: judges see `Data-Beyond-Space` ([[2026-11-14 Step 1c review of Victor's work]])
+- [x] Web research: what NASA says it needs, matched to our data ([[NASA stated fire safety needs]])
 
 ## In progress
 - [ ] **Step 1 - choose the central insight.** Waiting for Lama: read [[Oxygen evidence (generated)]] (section 1 first) and the "oxygen pattern" section of [[PSI data source]], then decide. [[Vetted reference from the external briefs]] adds what PSI itself says about gravity and atmospheres, and what must not be used.
