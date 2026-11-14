@@ -4,7 +4,7 @@
 
 ## Map
 - **Challenge** - [[Challenge brief]] · [[Challenge video]] · [[Rules and eligibility]] · [[Judging criteria]]
-- **Domain** - [[Investigations overview]] · [[Vetted reference from the external briefs]] · [[NASA stated fire safety needs]]
+- **Domain** - [[Investigations overview]] · [[What the investigations show in plain words]] · [[Vetted reference from the external briefs]] · [[NASA stated fire safety needs]]
 - **Data** - [[PSI data source]] · [[Oxygen evidence (generated)]] · [[Publications and abstracts]]
 - **Decisions** - [[Decision log]] · [[AI provider and hosting options]]
 - **Build log** - newest note in `05 Build log/`
