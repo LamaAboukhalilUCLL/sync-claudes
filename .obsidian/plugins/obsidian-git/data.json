@@ -1,5 +1,5 @@
 {
-  "commitMessage": "mylene-aradani: {{date}}",
+  "commitMessage": "vault backup: {{date}}\n",
   "autoCommitMessage": "vault: {{hostname}} {{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
