@@ -82,6 +82,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Result:** best score is 3 of 5 (FLEX, ACME CFI-G); none meets all five.
 - **Open point for Lama:** D6 keeps cells such as `0.5 atm` (CFI) and `~30% O2` (s-Flame) as text, so they score nothing. Allowing "number plus unit" cells would credit CFI and FLEX-2 for low pressure. Keep D6 strict, or relax it?
 
+## D15 - Obsidian Git auto-sync every 2 minutes
+- **When:** 14 Nov 2026
+- **Decided by:** the team
+- **What:** the Obsidian Git plugin commits and syncs 2 minutes after edits stop (`autoSaveInterval: 2` in `.obsidian/plugins/obsidian-git/data.json`). Pull stays every 5 minutes.
+- **Why:** the plugin settings are committed, so both team members share one value. Picking one together stops each person's sync from overwriting the other's setting.
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
