@@ -3,10 +3,10 @@
 **Now:** see [[Status]]
 
 ## Map
-- **Challenge** - [[Challenge brief]] · [[Rules and eligibility]] · [[Judging criteria]]
+- **Challenge** - [[Challenge brief]] · [[Challenge video]] · [[Rules and eligibility]] · [[Judging criteria]]
 - **Domain** - [[Investigations overview]] · [[Vetted reference from the external briefs]]
-- **Data** - [[PSI data source]] · [[Oxygen evidence (generated)]]
-- **Decisions** - [[Decision log]]
+- **Data** - [[PSI data source]] · [[Oxygen evidence (generated)]] · [[Publications and abstracts]]
+- **Decisions** - [[Decision log]] · [[AI provider and hosting options]]
 - **Build log** - newest note in `05 Build log/`
 - **Submission** - [[Submission checklist]] · [[SI use log]] · [[References]]
 

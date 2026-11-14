@@ -6,6 +6,7 @@ Everything external the project uses goes here, with link text and URL, even if 
 | Link text | URL | Used for |
 |---|---|---|
 | PSI Data Repository: Combustion Science | https://psi.nasa.gov/physci/repo/search?q=combustion | Investigation metadata and Experimental Tables |
+| 2026 Challenge: Flame in Freefall (NASA Space Apps video) | https://www.youtube.com/watch?v=AVuEiKxOpc0 | Understanding the challenge; reason for higher habitat oxygen ([[Challenge video]]) |
 
 ### The 24 Combustion Science investigations, cited by DOI
 Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clicking the DOI links has not been tested yet.
@@ -40,4 +41,5 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 ## Other data, code, libraries, images, text
 | Link text | URL | Used for |
 |---|---|---|
-| Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py` |
+| Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
+| OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |

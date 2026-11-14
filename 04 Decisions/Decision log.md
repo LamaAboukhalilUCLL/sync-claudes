@@ -52,5 +52,6 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Central insight** the project is built around (Step 1).
 - **Scope:** which views are must-have (Step 1 / Step 3).
 - **Tech stack** for the app (Step 3).
-- **AI provider** for cited answers (Step 5).
+- **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
+- **Where publication abstracts live:** repository `Data-Beyond-Space` (now only `fetch_papers.py` and `data/papers/`) or `app/` here. See [[Publications and abstracts]].
 - **Demo format:** 30-second video or 7 slides (Step 6).
