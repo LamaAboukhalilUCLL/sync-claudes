@@ -6,7 +6,9 @@ The PSI snapshot in `app/raw/` holds each investigation's publication list (titl
 
 ## Numbers (first run, 14 Nov 2026)
 - **352** publication entries across the 24 records; **284** have a DOI; **235 unique DOIs**.
-- **72 of 235** DOIs (31 %) returned an abstract from OpenAlex. The rest have title, year and venue only.
+- **73 of 235** DOIs (31 %) returned an abstract from OpenAlex. The rest have title, year and venue only. (Corrected from 72 on 14 Nov after counting `papers.json`; its manifest also says 73.)
+- **Coverage is uneven** (abstracts / unique DOIs, counted from `papers.json`): FLEX 20/45, FLEX-2 19/36, s-Flame 11/37, Flame Design 8/33, SAME 8/10, E-FIELD 7/22, CLD Flame 5/17, BRE 3/15, BASS 3/7, CFI 3/6, SPICE 3/7, BASS-II 1/9, Saffire-I 0/3, Saffire-II 0/5, CFI-G 0/2. The solid-fuel investigations have almost none.
+- 3 papers have an OpenAlex title that differs from the PSI title; not yet checked whether they are wrong matches.
 - Most papers are in Combustion and Flame, Proceedings of the Combustion Institute, Fire Safety Journal and similar journals, often paywalled.
 
 ## Where the data is
@@ -15,7 +17,7 @@ Repository `Data-Beyond-Space` (LamaAboukhalilUCLL), separate from this vault:
 - `data/papers/papers.json`: one entry per DOI, with the PSI ids that cite it, title, year, venue, open-access link, abstract (null when missing).
 - `data/papers/manifest.json`: run time, which snapshot files were read (with their SHA-256 from `app/raw/manifest.json`), counts, errors.
 
-Where this should live (that repo, or `app/` here) is an open decision, see [[Decision log]].
+Decided 14 Nov (D10 in [[Decision log]]): the abstracts stay in `Data-Beyond-Space`, which is the repository the judges will see.
 
 ## What this means for Step 5
 - An abstract is the authors' own summary, so it can support a cited sentence. A title alone cannot.

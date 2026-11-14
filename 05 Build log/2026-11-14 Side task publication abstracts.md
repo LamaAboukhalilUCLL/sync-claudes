@@ -14,7 +14,7 @@ python scripts/fetch_papers.py
 ```
 
 ## Learned
-- 235 unique DOIs, 72 with an OpenAlex abstract (31 %).
+- 235 unique DOIs, 73 with an OpenAlex abstract (31 %). (Corrected from 72; see [[2026-11-14 Step 1c review of Victor's work]].)
 - The removed duplicate (about 28 MB) is still in that repository's git history. It does no harm; rewriting shared history would.
 
 ## Open

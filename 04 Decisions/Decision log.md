@@ -48,10 +48,17 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Decided by:** Lama
 - **What:** the AI provider is decided at Step 5. Nothing before then may depend on a live API key.
 
+## D10 - `Data-Beyond-Space` is the repository the judges see
+- **When:** 14 Nov 2026
+- **Decided by:** Lama
+- **What:** the public submission repository is `Data-Beyond-Space` (github.com/LamaAboukhalilUCLL/Data-Beyond-Space). This vault (`sync-claudes`) stays the team's shared notes. Publication abstracts stay in `Data-Beyond-Space`.
+- **Changes D7:** the product code no longer ends up in the vault's `app/` folder.
+- **Consequence, not yet done:** everything a judge needs to trace a number must be in `Data-Beyond-Space` before submission: the PSI snapshot with its manifest, the scripts, the app, the references and the AI acknowledgements. Today the snapshot and two scripts are only in the vault's `app/`. Moving them is a step that waits for Lama's go.
+
 ## Open decisions
 - **Central insight** the project is built around (Step 1).
 - **Scope:** which views are must-have (Step 1 / Step 3).
 - **Tech stack** for the app (Step 3).
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
-- **Where publication abstracts live:** repository `Data-Beyond-Space` (now only `fetch_papers.py` and `data/papers/`) or `app/` here. See [[Publications and abstracts]].
+- **When and how the snapshot and scripts move** from the vault's `app/` into `Data-Beyond-Space` (follows from D10).
 - **Demo format:** 30-second video or 7 slides (Step 6).
