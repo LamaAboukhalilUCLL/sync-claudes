@@ -1,7 +1,5 @@
 # Flame in Freefall - Home
 
-testtext
-
 **Now:** see [[Status]]
 
 ## Map
