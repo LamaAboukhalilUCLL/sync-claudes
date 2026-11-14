@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sat 14 Nov 2026, 22:40 (Claude Code, VS Code)_
+_Last updated: Sat 14 Nov 2026, 23:04 (Claude Code, VS Code)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -10,14 +10,16 @@ _Last updated: Sat 14 Nov 2026, 22:40 (Claude Code, VS Code)_
 - [x] Step 1c - Victor's work reviewed against the snapshot; D10: judges see `Data-Beyond-Space` ([[2026-11-14 Step 1c review of Victor's work]])
 - [x] Web research: what NASA says it needs, matched to our data ([[NASA stated fire safety needs]])
 
+- [x] Step 1 - central insight decided (D12) ([[2026-11-14 Step 1 central insight]])
+- [x] Steps 2 to 4 - snapshot moved into `Data-Beyond-Space`, data pipeline, checks, and first full dashboard ([[2026-11-14 Steps 2-4 data pipeline and dashboard]])
+
 ## In progress
-- [x] **Step 1 done - central insight decided (D12):** how much of NASA's fire data applies to the Moon Base habitats and their higher-oxygen air, and where it stops. ([[2026-11-14 Step 1 central insight]])
-- [ ] **Now: scope.** Lama decides which views the dashboard must have.
-- Earlier Step 1 notes: Direction chosen (D11): Earth-gravity screening, row A of [[NASA stated fire safety needs]]. Waiting for Lama to write the sentence; read "Row A checked" in that note first. Earlier reading list: read [[Oxygen evidence (generated)]] (section 1 first) and the "oxygen pattern" section of [[PSI data source]], then decide. [[Vetted reference from the external briefs]] adds what PSI itself says about gravity and atmospheres, and what must not be used.
+- [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
 
 ## Next
-- [ ] Move the PSI snapshot and the two scripts from the vault's `app/` into `Data-Beyond-Space` (follows from D10; waits for Lama's go)
-- [ ] Step 2 - data pipeline (starts from the snapshot; nothing more needs downloading)
+- [ ] Make `Data-Beyond-Space` public and switch on GitHub Pages (branch `main`, folder `/docs`); test the public link in a private window
+- [ ] Team reviews the AI-written summaries and question board (`data/content/interpretation.json`)
+- [ ] Step 6 - project page text, demo (30-second video or 7 slides), submission checklist
 
 ## Open questions
 - ~~Who is the Team Owner?~~ **Answered:** Lama Abou Khalil (team page "Data Beyond Space", Members tab, marked Team Owner). She is in Belgium, so the deadline is **Sun 15 Nov, 23:59 CET**.

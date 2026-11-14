@@ -70,9 +70,21 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Honesty rule that follows:** the dashboard shows coverage and gaps, not predictions of how fire behaves on the Moon. No PSI record tests Moon gravity, and solids stop at about 22 % oxygen.
 - **Replaces D11** as the main direction; Earth-gravity screening (D11) stays as a supporting argument for why gaps matter.
 
+## D13 - Scope: the five views
+- **When:** 14 Nov 2026
+- **Decided by:** Lama asked Claude Code to pick the views; she approved the list and said to build.
+- **What:** coverage map, ranked list, investigation page with compare, Moon Base question board, download. No live chat box and no predicted Moon flame behaviour. The AI element is the plain-language summaries and the question board, written in advance, labelled, and checked by program.
+
+## D14 - How the ranking works (proposed by Claude Code, to be confirmed by Lama)
+- **When:** 14 Nov 2026
+- **What:** five conditions, one point each, no weights: (1) the record's own text names spacecraft fire safety as its purpose, (2) it tests solid cabin materials, (3) a test states 30 % ambient oxygen or more, (4) a test states 10.2 psi or less, (5) both in the same test. Half a point where fire safety is only named as a benefit, or a burner or model stands in for solids. Ties: purpose, then material, then PSI number.
+- **Why:** it uses all 24 investigations, every point can be shown with its evidence, and it avoids invented weights.
+- **Result:** best score is 3 of 5 (FLEX, ACME CFI-G); none meets all five.
+- **Open point for Lama:** D6 keeps cells such as `0.5 atm` (CFI) and `~30% O2` (s-Flame) as text, so they score nothing. Allowing "number plus unit" cells would credit CFI and FLEX-2 for low pressure. Keep D6 strict, or relax it?
+
 ## Open decisions
-- **Scope:** which views are must-have (Step 1 / Step 3).
-- **Tech stack** for the app (Step 3).
+- **Confirm D14** (ranking conditions) and the D6 question inside it.
+- **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
+- **Make `Data-Beyond-Space` public and switch on GitHub Pages** (Settings, Pages, branch `main`, folder `/docs`).
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
-- **When and how the snapshot and scripts move** from the vault's `app/` into `Data-Beyond-Space` (follows from D10).
 - **Demo format:** 30-second video or 7 slides (Step 6).

@@ -41,5 +41,8 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 ## Other data, code, libraries, images, text
 | Link text | URL | Used for |
 |---|---|---|
+| G. A. Ruff, Spacecraft Fire Safety Needs for Exploration, NASA Glenn, 2020 | https://ntrs.nasa.gov/citations/20205007829 | Cited on the site: roadmap listing Saffire IV to VI with elevated oxygen (outside PSI) |
+| NASA: Moon Base | https://www.nasa.gov/moonbase | Context for the central insight; linked on the site |
+| NASA Space Apps 2026: Flame in Freefall challenge statement | https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/ | Source of the Moon Base atmosphere: 30 % oxygen or more at 10.2 psi or less |
 | Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
 | OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |
