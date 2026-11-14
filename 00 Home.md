@@ -5,7 +5,7 @@
 ## Map
 - **Challenge** - [[Challenge brief]] · [[Rules and eligibility]] · [[Judging criteria]]
 - **Domain** - [[Investigations overview]]
-- **Data** - [[PSI data source]]
+- **Data** - [[PSI data source]] · [[Oxygen evidence (generated)]]
 - **Decisions** - [[Decision log]]
 - **Build log** - newest note in `05 Build log/`
 - **Submission** - [[Submission checklist]] · [[SI use log]] · [[References]]

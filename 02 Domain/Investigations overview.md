@@ -2,7 +2,7 @@
 
 In microgravity there is no buoyancy, so hot gas does not rise; a candle flame becomes a blue sphere fed by diffusion. NASA's spacecraft fire safety work has three pillars: **prevention, detection, suppression**.
 
-The 24 Combustion Science investigations found in PSI on 14 Nov 2026. "Role" is **our own draft classification**, to be reviewed in Step 1.
+The 24 Combustion Science investigations found in PSI on 14 Nov 2026 (verified against the snapshot in `app/raw/`; DOIs in [[References]]). "What burns" and "Role" are **our own draft classification**, to be reviewed in Step 1.
 
 | PSI id | Name | What burns | Hardware | Role (draft) |
 |---|---|---|---|---|
@@ -13,11 +13,11 @@ The 24 Combustion Science investigations found in PSI on 14 Nov 2026. "Role" is 
 | [PSI-100](https://psi.nasa.gov/physci/repo/data/investigations/PSI-100) | Saffire-III | Solids, large scale | Cygnus vehicle | Prevention |
 | [PSI-102](https://psi.nasa.gov/physci/repo/data/investigations/PSI-102) | SAME | Smoke | MSG | Detection |
 | [PSI-101](https://psi.nasa.gov/physci/repo/data/investigations/PSI-101) | SAME-R | Smoke | MSG | Detection |
-| [PSI-47](https://psi.nasa.gov/physci/repo/data/investigations/PSI-47) | DAFT / DAFT-2 | Dust (same instrument as SAME) | - | Detection |
+| [PSI-47](https://psi.nasa.gov/physci/repo/data/investigations/PSI-47) | DAFT / DAFT-2 | Dust (same instrument as SAME) | TSI P-Trak (hardware field in PSI) | Detection |
 | [PSI-69](https://psi.nasa.gov/physci/repo/data/investigations/PSI-69) | FLEX | Liquid droplets | CIR, MDCA | Suppression |
 | [PSI-68](https://psi.nasa.gov/physci/repo/data/investigations/PSI-68) | FLEX-2 | Liquid droplets | CIR, MDCA | Suppression |
 | [PSI-39](https://psi.nasa.gov/physci/repo/data/investigations/PSI-39) | CFI | Liquid droplets | CIR, MDCA | Fundamental |
-| [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) | ACME BRE | Gas (emulates solids and liquids) | CIR, ACME | Prevention |
+| [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) | ACME BRE | Gas (burner emulating solids and liquids) | CIR, ACME | Prevention |
 | [PSI-159](https://psi.nasa.gov/physci/repo/data/investigations/PSI-159) | ACME CFI-G | Gas | CIR, ACME | Fundamental |
 | [PSI-22](https://psi.nasa.gov/physci/repo/data/investigations/PSI-22) | ACME E-FIELD Flames | Gas | CIR, ACME | Fundamental |
 | [PSI-10](https://psi.nasa.gov/physci/repo/data/investigations/PSI-10) | ACME Flame Design | Gas | CIR, ACME | Fundamental |

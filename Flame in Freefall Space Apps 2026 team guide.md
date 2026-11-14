@@ -7,7 +7,7 @@ Nov 10, 2026 · @Lama Abou Khalil
 The hackathon is live, the data is open, and the Project tab on our team page unlocks at 9:00 in the Team Owner's local time.
 
 - [ ] 15-minute call: lock the four must-haves and assign owners
-- [ ] Data owner: open the [PSI combustion search](https://psi.nasa.gov/physci/repo/search?q=combustion) and list the roughly 22 Combustion Science investigations with their PSI ids
+- [ ] Data owner: open the [PSI combustion search](https://psi.nasa.gov/physci/repo/search?q=combustion) and list the 24 Combustion Science investigations with their PSI ids
 - [ ] Data owner: for each one, capture the Description fields and the Experimental Table; skip the raw video
 - [ ] Dashboard owner: put a bare page on a public link and a public code repository
 - [ ] SI owner: get one investigation summarized with a citation back to its PSI page and DOI
@@ -102,18 +102,20 @@ Oxygen facts that make a strong story:
 - E-FIELD Flames mimicked partial gravity through an electric field acting on flame ions.
 - Future partial-gravity experiments named by NASA: LUCI and FM2.
 
+Verified 14 Nov against PSI (this corrects the table above, which follows the challenge statement's grouping): SPICE and SLICE burn gaseous fuels only (SPICE: propylene, propane, ethylene, methane; SLICE: methane, ethylene, ethane). The "up to 85% oxygen" in CFI-G is oxygen flowing from the burner in inverse flames, not the surrounding atmosphere; its ambient oxygen reaches 40%.
+
 Real incidents NASA cites for the pitch: Apollo 1 (1967), Apollo 13, the Mir oxygen generator fire, and a smoke alarm on Artemis II.
 
 ## Data
 
-The data source NASA names is the [PSI Data Repository, combustion search](https://psi.nasa.gov/physci/repo/search?q=combustion); it opened for me without a login and returns 26 investigations, about 22 of them in Combustion Science.
+The data source NASA names is the [PSI Data Repository, combustion search](https://psi.nasa.gov/physci/repo/search?q=combustion); it opened for me without a login and returns 26 investigations, 24 of them in Combustion Science (verified 14 Nov against the snapshot in `app/raw/`; the other two are PSI-181, Materials Science, and PSI-108, Fluid Physics).
 
 Each investigation page, for example [PSI-25, BASS-II](https://psi.nasa.gov/physci/repo/data/investigations/PSI-25), holds:
 
 - **Description:** project type, flight platform, dates, objectives, approach, hypothesis, research impacts and Earth benefits, sub-research area such as Spacecraft Fire Safety, related investigations.
-- **Experimental Table:** one row per test. BASS-II has 130 rows with fuel sample material, flow settings, and initial and final oxygen, CO2 and CO readings.
+- **Experimental Table:** one row per test. BASS-II has 129 rows (130 lines with the header) with fuel sample material, flow settings, and initial and final oxygen, CO2 and CO readings.
 - **Hardware**, representative images, and a publications list with DOIs.
-- **Data files:** engineering documents, raw data, reference data, science documents, reports. BASS-II totals 255.77 GB, mostly video.
+- **Data files:** engineering documents, raw data, reference data, science documents, reports. BASS-II totals 274.63 GB (the same amount is 255.77 GiB, which is the figure the PSI page showed), mostly video.
 - **DOI and license:** BASS-II is CC0-1.0. PSI requires citing each investigation by its DOI, using the "Cite this Investigation" link.
 
 What this means for us:
@@ -132,6 +134,7 @@ What this means for us:
 | [PSI-100](https://psi.nasa.gov/physci/repo/data/investigations/PSI-100) | Saffire-III | Microgravity |
 | [PSI-102](https://psi.nasa.gov/physci/repo/data/investigations/PSI-102) | SAME | Microgravity |
 | [PSI-101](https://psi.nasa.gov/physci/repo/data/investigations/PSI-101) | SAME-R | Microgravity |
+| [PSI-47](https://psi.nasa.gov/physci/repo/data/investigations/PSI-47) | DAFT / DAFT-2 | Microgravity |
 | [PSI-69](https://psi.nasa.gov/physci/repo/data/investigations/PSI-69) | FLEX | Microgravity |
 | [PSI-68](https://psi.nasa.gov/physci/repo/data/investigations/PSI-68) | FLEX-2 | Microgravity |
 | [PSI-39](https://psi.nasa.gov/physci/repo/data/investigations/PSI-39) | CFI | Microgravity |
@@ -145,7 +148,7 @@ What this means for us:
 | [PSI-106](https://psi.nasa.gov/physci/repo/data/investigations/PSI-106) | SLICE | Microgravity |
 | [PSI-117](https://psi.nasa.gov/physci/repo/data/investigations/PSI-117), [PSI-142](https://psi.nasa.gov/physci/repo/data/investigations/PSI-142), [PSI-62](https://psi.nasa.gov/physci/repo/data/investigations/PSI-62), [PSI-60](https://psi.nasa.gov/physci/repo/data/investigations/PSI-60), [PSI-115](https://psi.nasa.gov/physci/repo/data/investigations/PSI-115) | Ground studies that reuse PSI flight data | Ground |
 
-The search has a second page with one more result that I did not open, and I read only the BASS-II page in full; other investigations may be laid out differently.
+Verified 14 Nov: the one result on the second search page is PSI-47 (DAFT / DAFT-2), now in the table above. All 24 records and their Experimental Tables are saved in `app/raw/`; see [[PSI data source]] and [[Oxygen evidence (generated)]].
 
 Other resources NASA lists for the challenge:
 

@@ -8,8 +8,8 @@
 .env.*
 *.key
 
-# Data pipeline cache and Python/Node leftovers
-app/raw/
+# Python/Node leftovers
+# (app/raw/ is committed on purpose: it is the PSI snapshot every number traces back to)
 __pycache__/
 *.pyc
 .venv/

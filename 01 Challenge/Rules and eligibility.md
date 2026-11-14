@@ -6,6 +6,7 @@ Sources: [Project Submission Guide](https://www.spaceappschallenge.org/resources
 - Universal Event teams need **at least 2 members**; maximum 6.
 - Every member registered, in the Universal Event, and on the team's Members tab.
 - No new members after submission closes.
+- Teams are reviewed under NASA's China funding restriction policy (affiliation with the government of China or a Chinese-owned company, university or institution, including Hong Kong and Macau) before Global Judging. NASA decides, from information the applicant provides. Source: Judging & Awards Guide, eligibility section.
 
 ## Deadline
 - Submission opened Sat 14 Nov 09:00; closes **Sun 15 Nov 23:59**, local time of the **Team Owner's area of residence**.
@@ -14,6 +15,7 @@ Sources: [Project Submission Guide](https://www.spaceappschallenge.org/resources
 
 ## Project
 - Must respond to the official challenge.
+- **All required fields** of the project form must be completed, or it cannot be submitted.
 - Must use **at least one NASA data source or resource** to be eligible for a Global Award.
 - PSI requires citing each investigation by its **DOI**.
 - Work must be original; every external resource (code, text, images, even if free) listed in the references field.
@@ -22,6 +24,7 @@ Sources: [Project Submission Guide](https://www.spaceappschallenge.org/resources
 
 ## Demo
 - **Video of 30 seconds or less, or at most 7 slides** including title and intro. Over the limit means not eligible.
+- A slide deck must show the **team name, names of team members and the challenge selected**.
 - Hosted externally on a **public link, no login**. Same for the final project link. Test in a private browser window.
 
 ## AI ("SI") use
