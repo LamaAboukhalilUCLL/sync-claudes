@@ -61,8 +61,16 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** the central insight will be about row A of [[NASA stated fire safety needs]]: Earth-gravity material screening may miss the fire risk. Lama chose it from the list of NASA's stated needs.
 - **Still to do:** Lama writes the one-sentence insight in her own words; it is then checked against the snapshot.
 
+## D12 - The central insight
+- **When:** 14 Nov 2026
+- **Decided by:** Lama
+- **What:** > "Our dashboard shows how much of NASA's microgravity fire data applies to the new Moon Base habitats and their higher-oxygen air, and where that data stops, so engineers planning those habitats can see which fire questions are already answered and which are not."
+- **Where the idea came from:** Lama saw NASA's Moon Base page (updated 12 Nov 2026) and proposed building the dashboard around the new lunar habitats and their higher-oxygen air. Claude Code put her idea into sentence form; she confirmed it.
+- **Sources for the claims:** higher oxygen (30 % or more at 10.2 psi or less) is from the challenge statement, and the reason for it from the [[Challenge video]]. The Moon Base page itself says nothing about oxygen or fire. What the data covers is in [[What the investigations show in plain words]] and [[Oxygen evidence (generated)]].
+- **Honesty rule that follows:** the dashboard shows coverage and gaps, not predictions of how fire behaves on the Moon. No PSI record tests Moon gravity, and solids stop at about 22 % oxygen.
+- **Replaces D11** as the main direction; Earth-gravity screening (D11) stays as a supporting argument for why gaps matter.
+
 ## Open decisions
-- **Central insight sentence** (direction chosen in D11; the sentence itself is still to be written by Lama).
 - **Scope:** which views are must-have (Step 1 / Step 3).
 - **Tech stack** for the app (Step 3).
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
