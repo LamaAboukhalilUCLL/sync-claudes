@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flame in Freefall - Fire Safety Insights from NASA Microgravity Combustion Data</title>
+<style>
+  :root { --bg:#0e1116; --panel:#171b22; --line:#2a303a; --text:#e8eaed; --muted:#9aa3af; --accent:#ff8a3d; --blue:#6cb6ff; --good:#56d39b; --warn:#f2c14e; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--text); }
+  a { color:var(--blue); }
+  header { padding:28px 24px 18px; border-bottom:1px solid var(--line); }
+  header h1 { margin:0 0 6px; font-size:26px; letter-spacing:-.01em; }
+  header h1 span { color:var(--accent); }
+  header p { margin:0; color:var(--muted); max-width:860px; }
+  main { display:grid; grid-template-columns:320px 1fr; gap:20px; padding:20px 24px 60px; max-width:1400px; margin:0 auto; }
+  @media (max-width:900px) { main { grid-template-columns:1fr; } }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:0 0 12px; }
+  label { display:block; font-size:13px; color:var(--muted); margin:12px 0 4px; }
+  select, input[type=range] { width:100%; }
+  select { background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:7px; font:inherit; }
+  .val { color:var(--text); font-weight:600; float:right; }
+  .presets { display:flex; flex-wrap:wrap; gap:6px; }
+  button { font:inherit; background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:6px 10px; cursor:pointer; }
+  button:hover, button.on { border-color:var(--accent); color:var(--accent); }
+  .insights { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:20px; }
+  .insight { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  .insight b { display:block; font-size:28px; color:var(--accent); line-height:1.1; }
+  .insight span { color:var(--muted); font-size:13px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:10px; background:var(--panel); }
+  .card .top { display:flex; gap:12px; align-items:flex-start; }
+  .score { min-width:54px; text-align:center; font-weight:700; font-size:20px; color:var(--accent); }
+  .score small { display:block; font-size:10px; font-weight:400; color:var(--muted); text-transform:uppercase; }
+  .card h3 { margin:0; font-size:16px; }
+  .card .sub { color:var(--muted); font-size:13px; }
+  .tags { margin:8px 0 0; display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; padding:2px 8px; border-radius:99px; border:1px solid var(--line); color:var(--muted); }
+  .tag.flight { color:var(--good); border-color:#2c5f4a; } .tag.ground { color:var(--warn); border-color:#6a5a2a; }
+  .why { margin:8px 0 0; padding-left:18px; color:var(--muted); font-size:13px; }
+  .why .yes { color:var(--good); } .why .no { color:var(--warn); }
+  details { margin-top:8px; font-size:13px; } summary { cursor:pointer; color:var(--blue); }
+  details p { color:var(--muted); margin:6px 0; }
+  .cmp { margin-left:auto; white-space:nowrap; font-size:13px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:500; width:130px; }
+  .chart-row { display:grid; grid-template-columns:150px 1fr; gap:8px; align-items:center; font-size:12px; margin:3px 0; }
+  .chart-row .name { color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .track { position:relative; height:14px; background:var(--bg); border-radius:3px; }
+  .bar { position:absolute; top:3px; height:8px; border-radius:4px; background:var(--blue); min-width:4px; }
+  .moon { position:absolute; top:0; bottom:0; background:rgba(255,138,61,.13); border-left:1px dashed var(--accent); }
+  .scn { position:absolute; top:-2px; bottom:-2px; width:2px; background:var(--accent); }
+  .axis { display:grid; grid-template-columns:150px 1fr; gap:8px; font-size:11px; color:var(--muted); }
+  .axis div:last-child { display:flex; justify-content:space-between; }
+  .note { color:var(--muted); font-size:12px; margin-top:10px; }
+  footer { color:var(--muted); font-size:12px; padding:0 24px 40px; max-width:1400px; margin:0 auto; }
+  .empty { padding:40px; text-align:center; color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1><span>Flame in Freefall</span> &middot; fire safety insights from microgravity combustion data</h1>
+  <p>Describe a crewed environment. The dashboard ranks NASA's microgravity combustion investigations by how closely their test conditions match it, explains why, and shows where the data runs out. Every investigation links to its record and DOI in NASA's Physical Sciences Informatics (PSI) repository.</p>
+</header>
+<main>
+  <aside>
+    <div class="panel">
+      <h2>Scenario</h2>
+      <div class="presets" id="presets"></div>
+      <label>Fire safety need</label>
+      <select id="pillar">
+        <option value="any">Any</option>
+        <option value="prevention">Prevention: material flammability</option>
+        <option value="detection">Detection: smoke and aerosols</option>
+        <option value="suppression">Suppression: extinguishing</option>
+      </select>
+      <label>What is burning</label>
+      <select id="phase">
+        <option value="any">Any</option>
+        <option value="solid">Solid (fabric, plastic)</option>
+        <option value="liquid">Liquid fuel</option>
+        <option value="gas">Gaseous fuel</option>
+        <option value="smoke">Smoke / particles</option>
+      </select>
+      <label>Oxygen <span class="val" id="o2v"></span></label>
+      <input type="range" id="o2" min="12" max="45" step="0.5" value="34">
+      <label>Pressure <span class="val" id="pv"></span></label>
+      <input type="range" id="p" min="0.3" max="1.5" step="0.01" value="0.56">
+      <label>Air flow <span class="val" id="fv"></span></label>
+      <input type="range" id="f" min="0" max="40" step="1" value="10">
+      <label><input type="checkbox" id="flightOnly"> Flight experiments only</label>
+      <p class="note">Score = need 30 + fuel type 25 + oxygen 25 + pressure 10 + air flow 10. Ground studies lose 5. Oxygen, pressure and flow score full marks when the scenario value lies inside the range the investigation tested, and fall off with distance outside it.</p>
+    </div>
+  </aside>
+  <section>
+    <div class="insights" id="insights"></div>
+    <div class="panel" style="margin-bottom:20px">
+      <h2>Oxygen coverage: what was tested vs. your scenario</h2>
+      <div id="chart"></div>
+      <p class="note">Blue bars: range of ambient oxygen tested per investigation, from its PSI Experimental Table. Orange line: your scenario. Shaded zone: 30% oxygen and above, the atmosphere NASA expects for the Moon Base and pressurized rovers.</p>
+    </div>
+    <div class="panel" id="comparePanel" style="margin-bottom:20px; display:none">
+      <h2>Compare</h2>
+      <div id="compare"></div>
+    </div>
+    <h2>Ranked investigations</h2>
+    <div id="list"></div>
+  </section>
+</main>
+<footer id="foot"></footer>
+
+<script src="catalogue.js"></script>
+<script>
+"use strict";
+const DATA = (window.CATALOGUE && window.CATALOGUE.investigations) || [];
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const PRESETS = [
+  { name:"Moon Base habitat", pillar:"prevention", phase:"solid", o2:34, p:0.56, f:10 },
+  { name:"ISS cabin", pillar:"prevention", phase:"solid", o2:21, p:1.0, f:10 },
+  { name:"Smoke detector design", pillar:"detection", phase:"smoke", o2:21, p:1.0, f:5 },
+  { name:"Extinguisher design", pillar:"suppression", phase:"any", o2:30, p:0.7, f:5 },
+];
+const compareSet = new Set();
+
+function rangeScore(value, range, weight, falloff) {
+  if (!range) return { pts: weight * 0.2, state: "none" };
+  const [lo, hi] = range;
+  if (value >= lo && value <= hi) return { pts: weight, state: "in" };
+  const dist = value < lo ? lo - value : value - hi;
+  return { pts: Math.max(0, weight * (1 - dist / falloff)), state: "out", dist, nearest: value < lo ? lo : hi };
+}
+
+function score(inv, s) {
+  const why = []; let total = 0;
+  const t = inv.table || {};
+  if (s.pillar === "any") total += 30;
+  else if (inv.pillars.includes(s.pillar)) { total += 30; why.push(["yes", "Addresses " + s.pillar]); }
+  else if (inv.pillars.includes("modeling") || inv.pillars.includes("fundamental")) { total += 8; why.push(["no", "Supports " + s.pillar + " only indirectly"]); }
+  else why.push(["no", "Focus is " + inv.pillars.join(", ") + ", not " + s.pillar]);
+
+  if (s.phase === "any") total += 25;
+  else if (inv.phase === s.phase) { total += 25; why.push(["yes", "Burns the same kind of fuel (" + inv.phase + ")"]); }
+  else why.push(["no", "Different fuel type (" + inv.phase + ")"]);
+
+  const o = rangeScore(s.o2, t.o2_pct, 25, 15); total += o.pts;
+  if (o.state === "in") why.push(["yes", `Tested at ${s.o2}% oxygen (range ${t.o2_pct[0]}-${t.o2_pct[1]}%)`]);
+  else if (o.state === "out") why.push(["no", `Oxygen tested only ${t.o2_pct[0]}-${t.o2_pct[1]}%, ${o.dist.toFixed(1)} points from your ${s.o2}%`]);
+  else why.push(["no", "No oxygen values in its experimental table"]);
+
+  const p = rangeScore(s.p, t.pressure_atm, 10, 1); total += p.pts;
+  if (p.state === "in") why.push(["yes", `Pressure range ${t.pressure_atm[0]}-${t.pressure_atm[1]} atm covers ${s.p} atm`]);
+  else if (p.state === "out") why.push(["no", `Pressure tested ${t.pressure_atm[0]}-${t.pressure_atm[1]} atm, not ${s.p} atm`]);
+
+  const f = rangeScore(s.f, t.flow_cm_s, 10, 30); total += f.pts;
+  if (f.state === "in") why.push(["yes", `Air flow range ${t.flow_cm_s[0]}-${t.flow_cm_s[1]} cm/s covers ${s.f} cm/s`]);
+  else if (f.state === "out") why.push(["no", `Air flow tested ${t.flow_cm_s[0]}-${t.flow_cm_s[1]} cm/s`]);
+
+  if (!inv.is_flight) { total -= 5; why.push(["no", "Ground study that reuses flight data (-5)"]); }
+  return { total: Math.round(total), why };
+}
+
+function scenario() {
+  return { pillar: $("pillar").value, phase: $("phase").value, o2: +$("o2").value, p: +$("p").value, f: +$("f").value, flightOnly: $("flightOnly").checked };
+}
+
+function renderInsights(s) {
+  const flight = DATA.filter(d => d.is_flight);
+  const withO2 = DATA.filter(d => d.table && d.table.o2_pct);
+  const high = withO2.filter(d => d.table.o2_pct[1] >= 30);
+  const highSolid = high.filter(d => d.phase === "solid");
+  const covers = withO2.filter(d => s.o2 >= d.table.o2_pct[0] && s.o2 <= d.table.o2_pct[1]);
+  const tests = DATA.reduce((n, d) => n + ((d.table && d.table.n_tests) || 0), 0);
+  const items = [
+    [DATA.length, `combustion investigations in PSI, ${flight.length} flown in microgravity`],
+    [tests.toLocaleString(), "individual tests listed in their experimental tables"],
+    [high.length, "investigations tested at 30% oxygen or more"],
+    [highSolid.length, "of those burned solid materials, the main habitat fire risk"],
+    [covers.length, `investigations cover your scenario's ${s.o2}% oxygen`],
+  ];
+  $("insights").innerHTML = items.map(([b, t]) => `<div class="insight"><b>${esc(b)}</b><span>${esc(t)}</span></div>`).join("");
+}
+
+function renderChart(s, ranked) {
+  const lo = 10, hi = 45, pct = v => Math.min(100, Math.max(0, (v - lo) / (hi - lo) * 100));
+  const rows = ranked.filter(r => r.inv.table && r.inv.table.o2_pct).map(r => {
+    const [a, b] = r.inv.table.o2_pct;
+    return `<div class="chart-row"><div class="name" title="${esc(r.inv.title)}">${esc(r.inv.short)}</div>
+      <div class="track"><div class="moon" style="left:${pct(30)}%;right:0"></div>
+      <div class="bar" style="left:${pct(a)}%;width:${Math.max(0.8, pct(b) - pct(a))}%" title="${a}-${b}% O2"></div>
+      <div class="scn" style="left:${pct(s.o2)}%"></div></div></div>`;
+  }).join("");
+  $("chart").innerHTML = (rows || '<div class="empty">No oxygen data.</div>') +
+    `<div class="axis"><div></div><div><span>10%</span><span>21% (Earth air)</span><span>30%</span><span>45% O2</span></div></div>`;
+}
+
+function card(r) {
+  const d = r.inv, t = d.table || {};
+  const fmt = (x, u) => x ? `${x[0]}-${x[1]} ${u}` : "not listed";
+  return `<div class="card"><div class="top">
+    <div class="score">${r.total}<small>match</small></div>
+    <div style="flex:1"><h3>${esc(d.short)}</h3><div class="sub">${esc(d.title)}</div>
+      <div class="tags"><span class="tag ${d.is_flight ? "flight" : "ground"}">${d.is_flight ? "Flight" : "Ground"}</span>
+        ${d.pillars.map(p => `<span class="tag">${esc(p)}</span>`).join("")}<span class="tag">${esc(d.phase)}</span>
+        ${t.n_tests ? `<span class="tag">${t.n_tests} tests</span>` : ""}${d.hardware ? `<span class="tag">${esc(d.hardware.slice(0, 48))}</span>` : ""}</div>
+    </div>
+    <label class="cmp"><input type="checkbox" data-cmp="${esc(d.id)}" ${compareSet.has(d.id) ? "checked" : ""}> compare</label></div>
+    <ul class="why">${r.why.map(([k, w]) => `<li class="${k}">${esc(w)}</li>`).join("")}</ul>
+    <details><summary>Objectives, conditions and sources</summary>
+      <p><b>Objective.</b> ${esc(d.objective)}</p>
+      <p><b>Approach.</b> ${esc(d.approach)}</p>
+      ${d.impacts ? `<p><b>Why it matters.</b> ${esc(d.impacts)}</p>` : ""}
+      <p><b>Tested.</b> Oxygen ${fmt(t.o2_pct, "%")}; pressure ${fmt(t.pressure_atm, "atm")}; air flow ${fmt(t.flow_cm_s, "cm/s")}. ${t.fuels && t.fuels.length ? "Fuels/materials: " + esc(t.fuels.slice(0, 6).join("; ")) + "." : ""}</p>
+      <p><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.id)} in NASA PSI</a>${d.doi ? ` &middot; DOI <a href="${esc(d.doi_url)}" target="_blank" rel="noopener">${esc(d.doi)}</a>` : ""} &middot; ${d.publications.length} publications &middot; ${esc(d.size_gb)} GB of data</p>
+    </details></div>`;
+}
+
+function renderCompare() {
+  const sel = DATA.filter(d => compareSet.has(d.id));
+  $("comparePanel").style.display = sel.length ? "" : "none";
+  if (!sel.length) return;
+  const fmt = (x, u) => x ? `${x[0]}-${x[1]} ${u}` : "not listed";
+  const rows = [
+    ["Type", d => d.type], ["Platform", d => d.platform], ["Hardware", d => d.hardware], ["Fire safety role", d => d.pillars.join(", ")],
+    ["Fuel type", d => d.phase], ["Fuels / materials", d => ((d.table || {}).fuels || []).slice(0, 6).join("; ")],
+    ["Tests", d => (d.table || {}).n_tests || "not listed"], ["Oxygen", d => fmt((d.table || {}).o2_pct, "%")],
+    ["Pressure", d => fmt((d.table || {}).pressure_atm, "atm")], ["Air flow", d => fmt((d.table || {}).flow_cm_s, "cm/s")],
+    ["Hypothesis", d => d.hypothesis], ["Objective", d => d.objective], ["Source", d => d.id + (d.doi ? " | DOI " + d.doi : "")],
+  ];
+  $("compare").innerHTML = `<table><tr><th></th>${sel.map(d => `<td><b>${esc(d.short)}</b></td>`).join("")}</tr>` +
+    rows.map(([n, fn]) => `<tr><th>${esc(n)}</th>${sel.map(d => `<td>${esc(fn(d))}</td>`).join("")}</tr>`).join("") + "</table>";
+}
+
+function render() {
+  const s = scenario();
+  $("o2v").textContent = s.o2 + "%"; $("pv").textContent = s.p.toFixed(2) + " atm (" + (s.p * 14.696).toFixed(1) + " psi)"; $("fv").textContent = s.f + " cm/s";
+  const ranked = DATA.filter(d => !s.flightOnly || d.is_flight).map(inv => ({ inv, ...score(inv, s) })).sort((a, b) => b.total - a.total);
+  renderInsights(s); renderChart(s, ranked); renderCompare();
+  $("list").innerHTML = ranked.map(card).join("") || '<div class="empty">catalogue.js not found. Run <code>python build_catalogue.py</code> first.</div>';
+}
+
+$("presets").innerHTML = PRESETS.map((p, i) => `<button data-preset="${i}">${esc(p.name)}</button>`).join("");
+document.addEventListener("click", e => {
+  const i = e.target.dataset && e.target.dataset.preset;
+  if (i === undefined) return;
+  const p = PRESETS[+i]; $("pillar").value = p.pillar; $("phase").value = p.phase; $("o2").value = p.o2; $("p").value = p.p; $("f").value = p.f; render();
+});
+document.addEventListener("change", e => {
+  const id = e.target.dataset && e.target.dataset.cmp;
+  if (id) { if (e.target.checked) { if (compareSet.size >= 3) { e.target.checked = false; return; } compareSet.add(id); } else compareSet.delete(id); renderCompare(); return; }
+  render();
+});
+document.addEventListener("input", e => { if (e.target.type === "range") render(); });
+$("foot").innerHTML = `Data: ${esc((window.CATALOGUE || {}).source || "NASA PSI")}, retrieved ${esc((window.CATALOGUE || {}).generated || "")}. Investigation records are NASA open data; cite each by its DOI. Built by team Data Beyond Space for the 2026 NASA Space Apps Challenge. Fire-safety role and fuel-type labels are our own classification.`;
+render();
+if (typeof module !== "undefined") module.exports = { score, rangeScore };
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Obsidian: per-person window layout and caches (cause merge conflicts)
+.obsidian/workspace*
+.obsidian/cache
+.trash/
+
+# Secrets: never commit API keys
+.env
+.env.*
+*.key
+
+# Data pipeline cache and Python/Node leftovers
+app/raw/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# OS files
+Thumbs.db
+.DS_Store
