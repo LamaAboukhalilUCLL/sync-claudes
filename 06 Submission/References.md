@@ -50,7 +50,7 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | Inter typeface (SIL OFL 1.1) | https://github.com/rsms/inter | Text on the site |
 | DM Mono typeface (SIL OFL 1.1) | https://github.com/googlefonts/dm-mono | Small labels on the site |
 | Fontsource (font files) | https://fontsource.org | Where the three font files were downloaded |
-| NASA Horizon Design System, hds-core | https://github.com/nasa/hds-core | Read to see which typefaces NASA uses; nothing copied from it |
+| NASA Horizon Design System, hds-core | https://github.com/nasa/hds-core | Source of the site's colour values (NASA Red, NASA chart blue, Active Green, the Carbon greys, the chart palette for dark backgrounds) and of the choice of Inter and DM Mono. Only values are used: no NASA insignia, theme files or code |
 | Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
 | Moon nearside LRO 5000.jpg (Lunar Reconnaissance Orbiter mosaic; NASA/GSFC/Arizona State University; public domain) | https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg | Cropped photo at the bottom of the overview page; credited on the page and in `docs/img/CREDITS.md`. A real photo, not AI-generated |
 | OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |

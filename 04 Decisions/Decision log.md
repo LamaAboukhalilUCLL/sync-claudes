@@ -101,6 +101,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** dark and restrained, in the manner of the reference designs she supplied: a real Moon photograph behind the pages, one warm accent, no glows or "AI" look, navigation that a first-time visitor understands. D16 (Mylene's visual-first dashboard, PSI only) is accepted: Lama merged it.
 - **Also:** no clickable map of the Moon's surface, because PSI has no lunar locations. A three-stop journey (Earth, low Earth orbit, Moon Base) is used instead. Lama can still overrule this.
 
+## D18 - NASA's colour values
+- **When:** 15 Nov 2026
+- **Decided by:** Lama
+- **What:** points, lines and status marks use the colour values NASA publishes in its Horizon Design System: NASA Red for the Moon Base line and for emphasis, NASA's dark-background chart palette for the fuel types, Active Green for a condition that is met, the Carbon greys for text and lines.
+- **Limits kept:** no NASA logo or insignia anywhere, and the footer still says the project is not affiliated with or endorsed by NASA. Commit `Data-Beyond-Space` after `ac5fd84`.
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").

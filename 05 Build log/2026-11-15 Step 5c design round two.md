@@ -13,6 +13,9 @@
 | Circular logo saying Data Beyond Space | A circular mark drawn as SVG: the team name around a ring, "dbs" in the centre. In the header and the footer |
 | Look at the best sites for this theme | NASA's own Horizon Design System (public repository `nasa/hds-core`) ships exactly Inter, DM Mono and Public Sans, so two of our three families match what NASA uses. Its stated aim is to cut visual noise. We use the fonts only, not NASA's theme or any NASA insignia |
 
+## Added afterwards: NASA's colours
+Lama asked for NASA's colours on the points and coloured elements. The values come from NASA's public design system: solids `#f29d49`, droplets `#609af6`, gas flames `#79a3ad`, burner emulating solids `#c2b47c`, Moon Base line NASA Red `#f64137`, emphasis `#ff5c52`, condition met Active Green `#47da84`, greys from the Carbon scale. Recorded as D18.
+
 ## Why these choices
 - Fonts are served from `docs/fonts/` (SIL Open Font License), so the site makes no request to an outside font service and still works offline.
 - Buttons and navigation are in sentence case; uppercase is kept only for a few small technical labels.
