@@ -138,7 +138,14 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** the overview opens with the problem in three steps and a route map from Earth to the Moon Base; a new Habitat page places the six open questions in a drawing of a habitat.
 - **Why:** the start should state the problem at a glance, and readers should see where each fire question sits in a habitat. See [[2026-11-15 Step 8 introduction, route map and habitat]].
 
+## D24 - A statistical model of FLEX, on a branch (proposed, not confirmed)
+- **When:** 15 Nov 2026
+- **Decided by:** Lama asked for more depth on a new branch and left the choice of what to build to Claude Code. **Merging is her decision and still open.**
+- **What:** an Analysis page with an ordinary least squares model of NASA's FLEX droplet tests, checked by an independent refit, plus a near-miss count on the overview.
+- **Why:** FLEX is the only table with high oxygen and an outcome per test, so it is where real analysis is possible. Goes beyond D12 (no predictions) in a limited way: droplets only, inside tested conditions, with ranges. See [[2026-11-15 Step 9 droplet model on a branch]].
+
 ## Open decisions
+- **Merge branch `droplet-model`?** and the wording for the 17 near-miss FLEX tests (D24).
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
 - ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done (public and live, checked 15 Nov 12:30).
