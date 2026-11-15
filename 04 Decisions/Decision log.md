@@ -125,6 +125,13 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** build an atmosphere chooser and a material and test finder. Not built: RAG with a language model, an MCP server, a predictive ML model.
 - **Why:** they turn the finding into something a reader can use, with low risk on the last day. See [[2026-11-15 Step 6 atmosphere chooser and finder]].
 
+## D22 - Three additions: attribute matrix, Ask the records, reading lists outside PSI
+- **When:** 15 Nov 2026
+- **Decided by:** Lama, from a list of options with effort and risk
+- **What:** (1) an AI-extracted, machine-checked table of what every investigation burned, varied and measured; (2) a question box answered with NASA's own sentences, matched by a small language model that runs in the browser; (3) links to NASA reports outside PSI under each open question.
+- **Why:** more technical depth and usefulness without giving up the rule that nothing is invented. No language model writes text on the site, and no API key is needed (keeps D9).
+- **Note:** (3) partly reverses D16 (PSI only on the site). Only titles and links are shown; no figure comes from outside PSI. See [[2026-11-15 Step 7 matrix, ask the records, reading lists]].
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").

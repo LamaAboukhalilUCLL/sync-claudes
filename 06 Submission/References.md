@@ -54,3 +54,13 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
 | Moon nearside LRO 5000.jpg (Lunar Reconnaissance Orbiter mosaic; NASA/GSFC/Arizona State University; public domain) | https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg | Cropped photo at the bottom of the overview page; credited on the page and in `docs/img/CREDITS.md`. A real photo, not AI-generated |
 | OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |
+| all-MiniLM-L6-v2 sentence embedding model (Apache-2.0); ONNX build by Xenova | https://huggingface.co/Xenova/all-MiniLM-L6-v2 | The language model behind "Ask the records"; served from the site |
+| Transformers.js 4.3.2 (Hugging Face, Apache-2.0) | https://github.com/huggingface/transformers.js | Runs the model in the browser and in `scripts/build_search.mjs` |
+| ONNX Runtime Web (Microsoft, MIT) | https://github.com/microsoft/onnxruntime | Part of Transformers.js; the two `ort-wasm` files in `docs/vendor/` |
+| Preliminary Results from the Saffire VI Experiment, NASA, 2024 | https://ntrs.nasa.gov/citations/20240002981 | Reading list under the open questions (link only) |
+| Fire-Resistant Textile Development, NASA, 2026 (full title on the site) | https://ntrs.nasa.gov/citations/20260003042 | Reading list (link only) |
+| Moon to Mars (M2M): Exploration Atmosphere, NASA, 2024 | https://ntrs.nasa.gov/citations/20240003211 | Reading list (link only) |
+| Combustion of Solids in Microgravity: Results from the BASS-II Experiment, NASA, 2014 | https://ntrs.nasa.gov/citations/20160000593 | Reading list (link only) |
+| Research Questions and Challenges for Improved Spacecraft Fire Detection, NASA, 2021 | https://ntrs.nasa.gov/citations/20210022143 | Reading list (link only) |
+| Material Flammability at Lunar and Martian Gravity, NASA, 2026 | https://ntrs.nasa.gov/citations/20260001966 | Reading list (link only) |
+| Flammability of Materials on the Moon, NASA, 2024 | https://ntrs.nasa.gov/citations/20240015307 | Reading list (link only) |
