@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 12:25 (Claude Code, VS Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 13:05 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -20,6 +20,7 @@ _Last updated: Sun 15 Nov 2026, 12:25 (Claude Code, VS Code, for Lama)_
 - [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
 - [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
+- [x] Review of the AI-written texts by Victor: 11 wording fixes, build and validate pass; **local, not pushed, waiting for Lama** ([[2026-11-15 Review of AI-written texts (Victor)]])
 
 ## In progress
 - [ ] **17:00**: Lama writes the project page text and the demo.
@@ -27,8 +28,8 @@ _Last updated: Sun 15 Nov 2026, 12:25 (Claude Code, VS Code, for Lama)_
 - [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
 
 ## Next
-- [ ] Make `Data-Beyond-Space` public and switch on GitHub Pages (branch `main`, folder `/docs`); test the public link in a private window
-- [ ] Team reviews the AI-written summaries and question board (`data/content/interpretation.json`)
+- [x] ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done: the repository shows as public and the site is live (checked 15 Nov, 12:30). Still to do: open the link in a private window.
+- [ ] Lama approves Victor's review edits, then they are pushed ([[2026-11-15 Review of AI-written texts (Victor)]])
 - [ ] Step 6 - project page text, demo (30-second video or 7 slides), submission checklist
 
 ## Open questions
