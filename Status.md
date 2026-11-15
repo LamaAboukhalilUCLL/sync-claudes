@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026 (Claude Code, VS Code)_
+_Last updated: Sun 15 Nov 2026 (Claude Code, VS Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -13,6 +13,8 @@ _Last updated: Sun 15 Nov 2026 (Claude Code, VS Code)_
 - [x] Step 1 - central insight decided (D12) ([[2026-11-14 Step 1 central insight]])
 - [x] Steps 2 to 4 - snapshot moved into `Data-Beyond-Space`, data pipeline, checks, and first full dashboard ([[2026-11-14 Steps 2-4 data pipeline and dashboard]])
 - [x] Step 5a - visual dashboard on branch `research-gaps-on-site`, commit `08ade33`, not merged ([[2026-11-15 Step 5a visual dashboard]])
+
+- [x] Step 5b - redesign with Moon backdrop and journey, live on GitHub Pages ([[2026-11-15 Step 5b redesign and Moon backdrop]])
 
 ## In progress
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.

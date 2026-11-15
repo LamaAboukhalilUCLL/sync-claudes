@@ -95,8 +95,13 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Why:** rule 6 (every figure from PSI), and the first version felt overwhelming.
 - **Where:** branch `research-gaps-on-site`, commit `08ade33`, see [[2026-11-15 Step 5a visual dashboard]].
 
+## D17 - Visual style: calm, photographic, no neon
+- **When:** 15 Nov 2026
+- **Decided by:** Lama
+- **What:** dark and restrained, in the manner of the reference designs she supplied: a real Moon photograph behind the pages, one warm accent, no glows or "AI" look, navigation that a first-time visitor understands. D16 (Mylene's visual-first dashboard, PSI only) is accepted: Lama merged it.
+- **Also:** no clickable map of the Moon's surface, because PSI has no lunar locations. A three-stop journey (Earth, low Earth orbit, Moon Base) is used instead. Lama can still overrule this.
+
 ## Open decisions
-- **Confirm D16** (visual design) before merging into `main`.
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
 - **Make `Data-Beyond-Space` public and switch on GitHub Pages** (Settings, Pages, branch `main`, folder `/docs`).
