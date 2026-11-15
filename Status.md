@@ -41,6 +41,8 @@ _Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `0
 
 - [x] Step 15 - everything brought up to date and checked on the live site; code frozen ([[2026-11-15 Step 15 final update before submission]])
 
+- [x] Shared hardware groups: branch `hardware-groups`, **waiting for Lama to say merge** ([[2026-11-15 Step 15 final update before submission]])
+
 ## In progress
 - [ ] A team member checks a sample of the AI labels: question labels (`topic_labels.json`), Ask test questions and word list (both marked unchecked).
 - [x] ~~Waiting for Lama: review and merge or drop branch `victor/ask-upgrade`~~ Done: merged as pull request #6 (D28).

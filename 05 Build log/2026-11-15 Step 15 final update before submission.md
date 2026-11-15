@@ -19,3 +19,6 @@ _Sun 15 Nov 2026, about 20:17 to 20:24 by the machine clock. Claude Code in VS C
 ## Still open (not code)
 - A team member checks a sample of the AI labels (question labels, Ask test questions, word list).
 - Project page text and the 7 slides (Lama).
+
+## Update, about 21:05: shared hardware, branch `hardware-groups`, not merged
+A teammate pointed out that shared hardware (ACME in the CIR, droplets in the MDCA, BASS and SPICE in the MSG) is in the records but not grouped anywhere. It was shown only as plain text on investigation and comparison pages. Lama asked for it. Built: groups from each record's hardware field by keyword (ACME 6, MDCA 3, Glovebox 3, Cygnus 3, Soot Diagnostics 2, ground studies 5; DAFT and SLICE name no shared hardware, SLICE's record names none). The map by meaning can be coloured by hardware; Explore lists the groups (hover shows the record's wording); investigation pages name the others in the same hardware. All checks pass; tested in Chrome, no errors; merges cleanly. **Waiting for Lama to say merge.**
