@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026 (Claude Code, VS Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 10:46 (Claude Code, VS Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -17,6 +17,7 @@ _Last updated: Sun 15 Nov 2026 (Claude Code, VS Code, for Lama)_
 - [x] Step 5b - redesign with Moon backdrop and journey, live on GitHub Pages ([[2026-11-15 Step 5b redesign and Moon backdrop]])
 - [x] Step 5c - design round two: fonts, logo, NASA photos, plainer labels ([[2026-11-15 Step 5c design round two]])
 - [x] Step 5d - design B chosen by Lama and applied to all pages ([[2026-11-15 Step 5d design B]])
+- [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
 
 ## In progress
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.

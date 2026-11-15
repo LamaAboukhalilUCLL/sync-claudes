@@ -119,6 +119,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Decided by:** Lama
 - **What:** keep B's type and black page, but: the Moon whole and fixed in the background; data points coloured by what burns; frames where they add clarity; the clickable journey instead of photographs. This restores the colours of D18 and partly reverses D19's "one accent".
 
+## D21 - Two tools: choose an atmosphere, find a material
+- **When:** 15 Nov 2026
+- **Decided by:** Lama, from six options
+- **What:** build an atmosphere chooser and a material and test finder. Not built: RAG with a language model, an MCP server, a predictive ML model.
+- **Why:** they turn the finding into something a reader can use, with low risk on the last day. See [[2026-11-15 Step 6 atmosphere chooser and finder]].
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
