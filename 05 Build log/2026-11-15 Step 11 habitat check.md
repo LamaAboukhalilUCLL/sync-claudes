@@ -18,3 +18,6 @@ All builds and checks pass. In a real Chrome session: changing a material and th
 
 ## Limits
 The parts are examples: NASA's table does not say what a mattress or a rack is made of. The page says the parts are examples and the materials are samples NASA tested.
+
+## Update: merged
+Lama said "merge". Branch `droplet-model` was merged into `main` (commit `f841a17`) and pushed. All checks passed on `main` before the push. On the live site, in a fresh Chrome profile, the Habitat page showed its five boxes, changing a material updated the numbers, and the Analysis page loaded its model. Still not checked: phones, other browsers, the downloaded report file, the copy-link button.

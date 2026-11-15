@@ -24,12 +24,11 @@ _Last updated: Sun 15 Nov 2026, 16:10 (Claude, Cowork, for Victor)_
 - [x] Step 9b (Victor) - visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **in pull request `victor/review-and-ai-marks`, waiting for Lama** ([[2026-11-15 Step 9b AI marks on drawings (Victor)]])
 - [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. All members confirmed registered in the Universal Event (Victor, 15 Nov). **Still open:** Firefox click-through
 - [x] Step 9d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **goes into the same pull request, waiting for Lama** ([[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]])
-- [x] Step 9 - droplet model and Analysis page, on branch `droplet-model` (`d2e9403`), **not merged** ([[2026-11-15 Step 9 droplet model on a branch]])
-- [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; branch `droplet-model` (`e67c5c7`), **not merged** ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
-- [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; branch `droplet-model` (`e6e42e3`), **not merged** ([[2026-11-15 Step 11 habitat check]])
+- [x] Step 9 - droplet model and Analysis page, merged into `main` (`f841a17`) and live ([[2026-11-15 Step 9 droplet model on a branch]])
+- [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
+- [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 11 habitat check]])
 
 ## In progress
-- [ ] **Lama decides on branch `droplet-model`**: merge the Analysis page or not; how to word the 17 near-miss FLEX tests.
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
 - [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
