@@ -51,9 +51,9 @@ Also run in Victor's working copy by mistake, on branch `victor/review-and-ai-ma
 3. In the README, one sentence: the search index rebuilds with the same passages, but its vectors can differ very slightly from machine to machine.
 
 ## Still to do by a person
-1. **Every one of the six members** confirms they are registered for the 2026 hackathon, in the Universal Event, and appear on the team's Members tab. This cannot be checked without each person's login.
-2. Open the site and the repository in a **private window** on a computer and on a phone; later the demo link too.
-3. A quick click-through in **Firefox** (and Safari if anyone has it); the Ask page is the most fragile part.
+1. ~~**Every one of the six members** confirms they are registered for the 2026 hackathon, in the Universal Event, and appear on the team's Members tab.~~ Done: all members confirmed (Victor, 15 Nov).
+2. ~~Open the site and the repository in a **private window** on a computer and on a phone~~ Done by Victor: Chrome private window fine; the phone check found the table pop-up bug, fixed in [[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]]. Still to do: the demo link, once it exists.
+3. A quick click-through in **Firefox** (and Safari if anyone has it); the Ask page is the most fragile part. Not done yet.
 4. ~~Optional: `npm install` and `node scripts/build_search.mjs` on a Windows machine~~ Done, see the Windows run above.
 
 ## Next

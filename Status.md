@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 14:50 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 15:00 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -22,7 +22,7 @@ _Last updated: Sun 15 Nov 2026, 14:50 (Claude, Cowork, for Victor)_
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
 - [x] Step 9a (Victor) - review of the AI-written texts: 11 wording fixes, build and validate pass; **in pull request `victor/review-and-ai-marks`, waiting for Lama** ([[2026-11-15 Step 9a review of AI-written texts (Victor)]])
 - [x] Step 9b (Victor) - visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **in pull request `victor/review-and-ai-marks`, waiting for Lama** ([[2026-11-15 Step 9b AI marks on drawings (Victor)]])
-- [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. **Still open:** every member confirms registration in the Universal Event; Firefox click-through
+- [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. All members confirmed registered in the Universal Event (Victor, 15 Nov). **Still open:** Firefox click-through
 - [x] Step 9d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **goes into the same pull request, waiting for Lama** ([[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]])
 
 ## In progress
