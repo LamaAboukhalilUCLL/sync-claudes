@@ -15,6 +15,7 @@ _Last updated: Sun 15 Nov 2026 (Claude Code, VS Code, for Lama)_
 - [x] Step 5a - visual dashboard on branch `research-gaps-on-site`, commit `08ade33`, not merged ([[2026-11-15 Step 5a visual dashboard]])
 
 - [x] Step 5b - redesign with Moon backdrop and journey, live on GitHub Pages ([[2026-11-15 Step 5b redesign and Moon backdrop]])
+- [x] Step 5c - design round two: fonts, logo, NASA photos, plainer labels ([[2026-11-15 Step 5c design round two]])
 
 ## In progress
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.

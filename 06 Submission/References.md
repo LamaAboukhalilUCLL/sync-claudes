@@ -44,6 +44,13 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | G. A. Ruff, Spacecraft Fire Safety Needs for Exploration, NASA Glenn, 2020 | https://ntrs.nasa.gov/citations/20205007829 | Cited on the site: roadmap listing Saffire IV to VI with elevated oxygen (outside PSI) |
 | NASA: Moon Base | https://www.nasa.gov/moonbase | Context for the central insight; linked on the site |
 | NASA Space Apps 2026: Flame in Freefall challenge statement | https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/ | Source of the Moon Base atmosphere: 30 % oxygen or more at 10.2 psi or less |
+| The Earth seen from Apollo 17 (NASA, Apollo 17 crew; public domain) | https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg | "Earth" stop on the overview |
+| International Space Station after undocking of STS-132 (NASA, crew of STS-132; public domain) | https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg | "Low Earth orbit" stop on the overview |
+| Cormorant Garamond typeface (SIL OFL 1.1) | https://github.com/CatharsisFonts/Cormorant | Titles on the site |
+| Inter typeface (SIL OFL 1.1) | https://github.com/rsms/inter | Text on the site |
+| DM Mono typeface (SIL OFL 1.1) | https://github.com/googlefonts/dm-mono | Small labels on the site |
+| Fontsource (font files) | https://fontsource.org | Where the three font files were downloaded |
+| NASA Horizon Design System, hds-core | https://github.com/nasa/hds-core | Read to see which typefaces NASA uses; nothing copied from it |
 | Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
 | Moon nearside LRO 5000.jpg (Lunar Reconnaissance Orbiter mosaic; NASA/GSFC/Arizona State University; public domain) | https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg | Cropped photo at the bottom of the overview page; credited on the page and in `docs/img/CREDITS.md`. A real photo, not AI-generated |
 | OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |
