@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 13:05 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 14:15 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -21,9 +21,10 @@ _Last updated: Sun 15 Nov 2026, 13:05 (Claude, Cowork, for Victor)_
 - [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
 - [x] Review of the AI-written texts by Victor: 11 wording fixes, build and validate pass; **local, not pushed, waiting for Lama** ([[2026-11-15 Review of AI-written texts (Victor)]])
+- [x] Visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **local, not pushed, waiting for Lama** ([[2026-11-15 AI marks on drawings (Victor)]])
 
 ## In progress
-- [ ] **17:00**: Lama writes the project page text and the demo.
+- [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
 - [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
 
