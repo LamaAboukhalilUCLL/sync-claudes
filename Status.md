@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `09109b2`; Lama works on the slides._
+_Last updated: Sun 15 Nov 2026, 21:55 (Claude Code, for Lama). Live site at `4ffbcfd` (hardware groups, pull request #7; Victor's Ask examples, pull request #8); every page checked on the live site, all checks pass._
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -41,7 +41,7 @@ _Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `0
 
 - [x] Step 15 - everything brought up to date and checked on the live site; code frozen ([[2026-11-15 Step 15 final update before submission]])
 
-- [x] Shared hardware groups: branch `hardware-groups`, **waiting for Lama to say merge** ([[2026-11-15 Step 15 final update before submission]])
+- [x] Shared hardware groups: merged by Lama (pull request #7, `554065d`) and live ([[2026-11-15 Step 15 final update before submission]])
 
 ## In progress
 - [ ] A team member checks a sample of the AI labels: question labels (`topic_labels.json`), Ask test questions and word list (both marked unchecked).
