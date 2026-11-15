@@ -150,11 +150,21 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** the NASA White Sands Test Facility table of 2007 (NTRS 20070018178) is shown on the Habitat page, marked as not from PSI and as an Earth test. It is never mixed into the PSI counts.
 - **Why:** it is the nearest public NASA evidence on solids in Moon Base air, and it sharpens the insight: tested on Earth, not confirmed in space. Reverses D16 for this one table. See [[2026-11-15 Step 10 Earth tests from White Sands and fixes]].
 
-## D26 - SI maps what NASA has written about each fire question (proposed method, not yet confirmed)
+## D26 - SI maps what NASA has written about each fire question (confirmed: Lama merged it on 15 Nov)
 - **When:** 15 Nov 2026
 - **Decided by:** Lama chose the idea. The method change (a large model labels, the small model is measured) was made by Claude Code after the small model failed, and **awaits her confirmation**.
 - **What:** all 925 passages labelled by question with machine-checked quotes; counts and overlaps on the Open questions page; the Ask search scored against the labels.
 - **Why:** it extends the coverage finding from tables to text, makes the SI produce a result, and replaces a claim about the search with a measurement. See [[2026-11-15 Step 12 what NASA wrote about each question]].
+
+## D27 - The next test that would teach the most, and the map by meaning
+- **When:** 15 Nov 2026
+- **Decided by:** Lama (idea 2 chosen from three ideas; the map was her own idea, an Obsidian-style graph instead of similarity numbers). Both merged at her word.
+- **What:** on the Analysis page, every condition FLEX's hardware ran is ranked by how much one more test would narrow the model's range at the chosen air; on Explore and the investigation pages, the 24 investigations on a map placed by the language model's similarity of their NASA text.
+- **Why:** the first turns the gap into a concrete next step and shows that more droplet tests add little, so the real gap is solids; the second replaces misleading 0.96 to 0.98 numbers with something readable. See [[2026-11-15 Step 14 next test that would teach the most]] and [[2026-11-15 Step 12b review of pull request 6 (Victor Ask upgrade)]].
+
+## D28 - Victor's Ask upgrade and the model switch (confirmed)
+- **When:** 15 Nov 2026
+- **Decided by:** Lama merged pull request #6 (`33968e0`), which settles the open items below: the Ask upgrade is live, the model is snowflake-arctic-embed-s, and the score is shown with its note that the labels are Claude's and unchecked. Two fixes from the review were merged after it (`bb98735`).
 
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
@@ -162,8 +172,8 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done (public and live, checked 15 Nov 12:30).
 - ~~**Approve Victor's 11 wording fixes** to the AI-written texts, the visible AI marks on the drawings ([[2026-11-15 Step 8b AI marks on drawings (Victor)]]) and the phone fix for the table pop-up ([[2026-11-15 Step 8d phone fix for the table pop-up (Victor)]]), all in the pull request from `victor/review-and-ai-marks`, before it is merged.~~ **Done:** merged as pull request #2 (`57a41b9`).
 - ~~**Merge or drop two reading-list links** (NESC TM-20260003925 under the materials question, ICES-2025-392 under the gravity question), branch `victor/reading-list-additions`. Links only, no numbers. See [[2026-11-15 Step 11a two reading-list links (Victor)]].~~ **Done:** merged as pull request #5 (`0397c6f`).
-- **Merge or drop the Ask upgrade** (branch `victor/ask-upgrade`): counted answers, evidence reach, Moon/partial-gravity card, glossary, related records by meaning, measured score on the Data page. D22 is unchanged (no model writes text). Inside it, three smaller choices: (1) show the score while the labels are Claude's, or only after Victor's re-labelling; (2) keep or drop the AI-drafted glossary; (3) whether to say anywhere that "related by meaning" recovers the cross-links the challenge statement names (the check says: mostly shared words, small gain on ACME BRE and BASS). See [[2026-11-15 Step 11b Ask upgrade (Victor)]].
-- **Language model for Ask: snowflake-arctic-embed-s or all-MiniLM-L6-v2** (same branch). The branch switches to arctic (Apache-2.0). For it: by meaning alone it is far better on the held-out questions (14 of 20 first, 17 in three; MiniLM 9 and 10). Against it: with the word bonus the site actually uses, the two are level (13 / 17 against 13 / 16), the download grows from about 50 to 62 MB, and it is a new model a few hours before the deadline. Going back is one line in `docs/ask.js` and a rebuild. See [[2026-11-15 Step 11c search quality (Victor)]].
+- ~~**Merge or drop the Ask upgrade** (branch `victor/ask-upgrade`): counted answers, evidence reach, Moon/partial-gravity card, glossary, related records by meaning, measured score on the Data page. D22 is unchanged (no model writes text). Inside it, three smaller choices: (1) show the score while the labels are Claude's, or only after Victor's re-labelling; (2) keep or drop the AI-drafted glossary; (3) whether to say anywhere that "related by meaning" recovers the cross-links the challenge statement names (the check says: mostly shared words, small gain on ACME BRE and BASS). See [[2026-11-15 Step 11b Ask upgrade (Victor)]].~~ **Done:** merged (D28).
+- ~~**Language model for Ask: snowflake-arctic-embed-s or all-MiniLM-L6-v2** (same branch). The branch switches to arctic (Apache-2.0). For it: by meaning alone it is far better on the held-out questions (14 of 20 first, 17 in three; MiniLM 9 and 10). Against it: with the word bonus the site actually uses, the two are level (13 / 17 against 13 / 16), the download grows from about 50 to 62 MB, and it is a new model a few hours before the deadline. Going back is one line in `docs/ask.js` and a rebuild. See [[2026-11-15 Step 11c search quality (Victor)]].~~ **Done:** arctic is live (D28).
 - **README and `.gitattributes` suggestions from the fresh-clone test** (Windows `py`, CSV line endings, search-index vectors). See [[2026-11-15 Step 8c eligibility checks and fresh-clone test (Victor)]]. Optional: add CFI-G's self-extinction counts as table evidence for the still-air point. See [[2026-11-15 Step 8a review of AI-written texts (Victor)]].
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
 - **Demo format:** 30-second video or 7 slides (Step 6).

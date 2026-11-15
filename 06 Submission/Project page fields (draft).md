@@ -2,7 +2,7 @@
 
 **Added:** Sun 15 Nov 2026, 13:40 · **By:** Victor, with Claude (Cowork) compiling from the vault and the repository. **Draft for Lama.** The summary, the description and the project name are hers to write (rule 5: the ideas are hers). Everything else here is compiled and checked, ready to paste.
 
-**Updated:** Sun 15 Nov 2026, 18:30 (Use of SI: one conditional bullet for the Ask upgrade, Step 11b). Before that 17:10, to match the live site (`main`, `f841a17`: White Sands table, Check your habitat, droplet Analysis page). Numbers re-run with `build_dataset.py`, `build_external.py` and `validate.py` on that commit.
+**Updated:** Sun 15 Nov 2026, 20:30, by Claude Code for Lama, to match the final live site (`main`, `7262f78`; code frozen, Lama works on the slides): Ask upgrade merged (pull request #6) with snowflake-arctic-embed-s, coverage of NASA's text by question, the next test that would teach the most, the map by meaning. New checked numbers added to the table; Use of SI no longer conditional. Earlier updates: 18:30 and 17:10 (Victor).
 
 Fields follow the order of the Project tab ([[Notes about project guide]], Project Submission Guide). Character and word limits as the guide states them.
 
@@ -37,6 +37,11 @@ Source: the build and `validate.py` run on `main` (`f841a17`), 15 Nov, 17:05. Ea
 | Quotations checked word for word by program | 81 | `validate.py` |
 | NASA White Sands Earth tests at Moon Base pressure (70.1 kPa, 10.17 psi), the one table not from PSI | 24 materials in 26 samples; at 30 % oxygen **7 fail** on Earth, 19 pass, **0 confirmed in space** | `earth_tests.json`, Habitat page ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]]) |
 | FLEX droplet tests in the Analysis page's model | 274 | [[2026-11-15 Step 9 droplet model on a branch]] |
+| Passages of NASA's records and listed papers that address each fire question (labelled by Claude, quotes machine-checked) | putting a fire out 155, detection 101, cabin materials 93, trusting the Earth test 41, high-oxygen or low-pressure air 26, **Moon gravity 1** (of 925) | `topics.json`, Open questions page ([[2026-11-15 Step 12 what NASA wrote about each question]]) |
+| Passages about solid materials in high-oxygen or low-pressure air | **4 passages from 2 sources** (ACME BRE record, one Earth-based narrow-channel paper); detection in that air: 0 | `topics.json` |
+| Ask search, Victor's score (40 test questions, held-out half of 20) | right investigation first 13 of 20, in the first three 17 of 20 (labels by Claude, unchecked) | `ask_eval.json`, Data page ([[2026-11-15 Step 11c search quality (Victor)]]) |
+| Ask search, second check (6 fire questions, passages shown) | 25 of 40 passages shown address the question (63 %); words alone 53 % | `topics.json`, Data page |
+| The next test that would teach the most (heptane droplets, Moon Base air) | best single test (34 % oxygen, 10.21 psi) narrows the model's 95 % range by **6.0 %**; a test in Earth air by 0.5 %; tests at one condition cannot go below 57 % of today's range | Analysis page ([[2026-11-15 Step 14 next test that would teach the most]]) |
 
 Wording NASA itself uses, safe to quote:
 - Moon Base and pressurized rovers, challenge statement word for word: "The intermediate oxygen concentration used on the Moon will likely be 30% or greater, with a corresponding pressure of 10.2 psi or less." and "that's more than a 40% increase in the oxygen concentration making materials much more flammable."
@@ -59,7 +64,7 @@ Private window on a computer: checked by Victor (Chrome), fine. Phone: checked b
 **Lama writes.** The guide's questions: what does it do and how does it work; what benefits; what do you hope to achieve; what tools, coding languages, hardware or software; how is it creative; what factors (energy, cost, accessibility) were considered.
 
 ### Ready-made: tools, languages, software
-> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for two helper scripts (`check_recount.cjs`, `build_search.mjs`). In-browser search with the open model snowflake-arctic-embed-s (all-MiniLM-L6-v2 until Step 11c; pending Lama's decision) run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian. Since Step 9 to 11 also: `build_external.py` (reads the NASA White Sands table from the paper's text, with pypdf 7.1.0 used once to extract that text), `analyze_flex.py` and `check_model.cjs` (the droplet model on the Analysis page).
+> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for the search index and the checks (`build_search.mjs`, `build_topics.mjs`, `eval_ask.mjs`, `check_recount.cjs`, `check_model.cjs`, `check_ask.cjs`). In-browser search and the map by meaning with the open model snowflake-arctic-embed-s, run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian. Since Step 9 to 11 also: `build_external.py` (reads the NASA White Sands table from the paper's text, with pypdf 7.1.0 used once to extract that text), `analyze_flex.py` and `check_model.cjs` (the droplet model on the Analysis page and the "next test" calculation, an exact update of the least-squares model checked against a refit).
 
 ### Ready-made: how it stays honest (facts from the README, for the "how it works" part)
 - A snapshot of NASA's files is stored byte for byte, with a SHA-256 checksum for each of the 47 files; `validate.py` re-checks them.
@@ -67,6 +72,9 @@ Private window on a computer: checked by Victor (Chrome), fine. Phone: checked b
 - Every quotation is checked word for word against the NASA record it is attributed to (81 quotations).
 - Headline numbers are counted a second time by separate code (`validate.py`); the in-browser recount for other atmospheres is checked against the build (`check_recount.cjs`).
 - Ambient oxygen and burner-flow oxygen are never mixed; cells NASA did not write as plain numbers are shown as written, never estimated.
+- The one table from outside PSI (NASA White Sands, 2007) is read from the paper's text by program and never mixed into the PSI counts.
+- The droplet model is fitted in Python and refitted independently in JavaScript; both must agree.
+- Every label sorting NASA's text by fire question carries a quote that a program checks word for word.
 - The site shows coverage and gaps; it does not predict fire behaviour on the Moon.
 
 ## 6. Use of SI
@@ -77,11 +85,14 @@ Not shown to the judges (data collection only), but required. The judges see the
 >   - research the challenge, NASA's PSI repository and NASA's published fire safety needs, and keep the team's notes;
 >   - write the code: the data scripts and the website;
 >   - write the plain-language summaries and the six-question board, and extract each investigation's attributes from NASA's record text. These texts are labelled AI-written on the site. A program checks every quotation word for word against NASA's records and forbids hand-typed numbers. A team member reviewed the summaries and the question board against the records and tables;
->   - draw the habitat schematic, the route map and the team logo as SVG code;
+>   - read all 925 passages of NASA's records and the papers PSI lists and label each with the fire questions it addresses, quoting the words that justify each label (checked by program; a team member should check a sample);
+>   - draft the 40 test questions and the everyday-word list used to score and extend the Ask page (marked unchecked in their files);
+>   - draw the habitat schematic, the route map and the team logo as SVG code, and build the map by meaning and the habitat check;
 >   - remove the black sky from a NASA photograph of the space station with a script.
 > - **ChatGPT (OpenAI)** produced one design mockup of the overview page, watermarked as AI-generated. The page layout follows it; the image is not on the site.
-> - **snowflake-arctic-embed-s** (Snowflake; it replaced all-MiniLM-L6-v2 in Step 11c, pending Lama's decision), an open language model, runs in the reader's browser on the "Ask" page. It only matches a question to NASA's sentences and writes no text.
-> - **Only if Lama merges `victor/ask-upgrade` (Step 11b):** Claude proposed six improvements to the Ask page and Claude Code built them: counted answers from NASA's tables, how far the evidence reaches into the chosen atmosphere, a notice when NASA has no Moon or Mars gravity data, a word list for everyday terms, related investigations by meaning, and a measured score (40 test questions). The word list and the test-question labels were drafted by Claude; say here whether a team member checked them. If the branch is dropped, delete this bullet.
+> - **snowflake-arctic-embed-s** (Snowflake, Apache-2.0; it replaced all-MiniLM-L6-v2), an open language model, runs in the reader's browser. On the "Ask" page it matches a question to NASA's sentences; on the Explore page it places the 24 investigations on a map by meaning. It writes no text.
+> - Claude proposed six improvements to the Ask page and Claude Code built them (merged as pull request #6): counted answers from NASA's tables, how far the evidence reaches into the chosen atmosphere, a notice when NASA has no Moon or Mars gravity data, a word list for everyday terms, related investigations by meaning, and a measured score (40 test questions).
+> - The droplet model and the "next test" calculation on the Analysis page are ordinary statistics (least squares), written as code with Claude's help and checked by an independent refit.
 >
 > The project's idea, asking how much of NASA's fire data applies to the new Moon Base habitats, is the team's: Lama proposed it after reading NASA's Moon Base page. The photographs are real NASA images, not AI-generated.
 

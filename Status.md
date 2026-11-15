@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 20:16 (Claude Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 20:30 (Claude Code, for Lama). Code frozen at `7262f78`; Lama works on the slides._
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -37,10 +37,12 @@ _Last updated: Sun 15 Nov 2026, 20:16 (Claude Code, for Lama)_
 - [x] Step 12 re-applied on top of Victor's Ask upgrade: branch `si-coverage-2` (`c0c6270`), merged ([[2026-11-15 Step 12 what NASA wrote about each question]])
 - [x] Step 12 merged into `main` and live (cache version 24)
 - [x] Step 14 - the next test that would teach the most: merged into `main` (`9ade543`) and live ([[2026-11-15 Step 14 next test that would teach the most]])
-- [x] Map by meaning (Lama's idea): branch `map-by-meaning`, **waiting for Lama to say merge** ([[2026-11-15 Step 12b review of pull request 6 (Victor Ask upgrade)]])
+- [x] Map by meaning (Lama's idea): merged (`743bb57`) and live ([[2026-11-15 Step 12b review of pull request 6 (Victor Ask upgrade)]])
+
+- [x] Step 15 - everything brought up to date and checked on the live site; code frozen ([[2026-11-15 Step 15 final update before submission]])
 
 ## In progress
-- [ ] Merge `si-coverage-2` (Lama). A teammate checks a sample of the labels. Map by meaning: preview waiting for Lama's yes or no.
+- [ ] A team member checks a sample of the AI labels: question labels (`topic_labels.json`), Ask test questions and word list (both marked unchecked).
 - [ ] **Waiting for Lama:** review and merge or drop branch `victor/ask-upgrade` ([[2026-11-15 Step 11b Ask upgrade (Victor)]]). Before the score goes live, Victor re-labels the 40 test questions and checks the glossary. The branch now also holds Step 11c, with a model switch for Lama to decide ([[2026-11-15 Step 11c search quality (Victor)]]).
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
