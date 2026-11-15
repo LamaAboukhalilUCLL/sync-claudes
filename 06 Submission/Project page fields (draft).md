@@ -2,7 +2,7 @@
 
 **Added:** Sun 15 Nov 2026, 13:40 · **By:** Victor, with Claude (Cowork) compiling from the vault and the repository. **Draft for Lama.** The summary, the description and the project name are hers to write (rule 5: the ideas are hers). Everything else here is compiled and checked, ready to paste.
 
-**Updated:** Sun 15 Nov 2026, 17:10, to match the live site (`main`, `f841a17`: White Sands table, Check your habitat, droplet Analysis page). Numbers re-run with `build_dataset.py`, `build_external.py` and `validate.py` on that commit.
+**Updated:** Sun 15 Nov 2026, 18:30 (Use of SI: one conditional bullet for the Ask upgrade, Step 11b). Before that 17:10, to match the live site (`main`, `f841a17`: White Sands table, Check your habitat, droplet Analysis page). Numbers re-run with `build_dataset.py`, `build_external.py` and `validate.py` on that commit.
 
 Fields follow the order of the Project tab ([[Notes about project guide]], Project Submission Guide). Character and word limits as the guide states them.
 
@@ -81,6 +81,7 @@ Not shown to the judges (data collection only), but required. The judges see the
 >   - remove the black sky from a NASA photograph of the space station with a script.
 > - **ChatGPT (OpenAI)** produced one design mockup of the overview page, watermarked as AI-generated. The page layout follows it; the image is not on the site.
 > - **all-MiniLM-L6-v2**, an open language model, runs in the reader's browser on the "Ask" page. It only matches a question to NASA's sentences and writes no text.
+> - **Only if Lama merges `victor/ask-upgrade` (Step 11b):** Claude proposed six improvements to the Ask page and Claude Code built them: counted answers from NASA's tables, how far the evidence reaches into the chosen atmosphere, a notice when NASA has no Moon or Mars gravity data, a word list for everyday terms, related investigations by meaning, and a measured score (40 test questions). The word list and the test-question labels were drafted by Claude; say here whether a team member checked them. If the branch is dropped, delete this bullet.
 >
 > The project's idea, asking how much of NASA's fire data applies to the new Moon Base habitats, is the team's: Lama proposed it after reading NASA's Moon Base page. The photographs are real NASA images, not AI-generated.
 
@@ -147,7 +148,7 @@ All 24 DOIs were checked against the `doi` field of each record in `data/psi/raw
 | Photograph: ISS-56 International Space Station fly-around (NASA/Roscosmos, public domain) | https://commons.wikimedia.org/wiki/File:ISS-56_International_Space_Station_fly-around_(13).jpg |
 | NASA Horizon Design System (colour values only; no insignia) | https://github.com/nasa/hds-core |
 
-The NTRS reports above are the site's reading lists (links and titles only; no number is taken from them), except the White Sands paper, which is the one data source outside PSI (D25). The last two rows (2026 NESC report, ICES-2025-392) are on the site only if Lama merges `victor/reading-list-additions`; if she drops it, keep the NESC report anyway if its quote is used in the text, and remove the ICES row.
+The NTRS reports above are the site's reading lists (links and titles only; no number is taken from them), except the White Sands paper, which is the one data source outside PSI (D25). The last two rows (2026 NESC report, ICES-2025-392) are on the site: `victor/reading-list-additions` was merged (pull request #5, `0397c6f`).
 
 ## 8. Space Agency Partner data and other references
 Space Agency Partner data: **none used.**

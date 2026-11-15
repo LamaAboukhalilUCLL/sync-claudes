@@ -1,6 +1,6 @@
 # Step 11b - Ask upgrade (Victor)
 
-**Date:** Sun 15 Nov 2026, evening · **By:** Victor, with Claude Code (design, code, checks) after six directions proposed by Claude (desktop app). Repository `Data-Beyond-Space`, **branch `victor/ask-upgrade`, five commits on top of `main` (`0397c6f`), not pushed by Claude, not merged: waiting for Lama.** Numbered 11b because it follows Lama's Step 11; it is not part of it.
+**Date:** Sun 15 Nov 2026, evening · **By:** Victor, with Claude Code (design, code, checks) after six directions proposed by Claude (desktop app). Repository `Data-Beyond-Space`, **branch `victor/ask-upgrade`, five commits on top of `main` (`0397c6f`), pushed by Victor to `origin/victor/ask-upgrade`, pull request open, not merged: waiting for Lama.** Numbered 11b because it follows Lama's Step 11; it is not part of it.
 
 ## Why
 The Ask page returned the closest quotations and nothing more. It computed nothing, did not say how far the evidence reaches toward Moon Base air, said nothing useful on Moon or partial-gravity questions, and its accuracy had never been measured. D22 stays as it is: no language model writes text on the site; the model only matches text.
@@ -79,4 +79,4 @@ py -m http.server 8000
 - Real phone and Firefox not tested.
 
 ## Next
-Victor pushes the branch and opens the pull request. Lama reviews and merges or drops it (see "Open decisions" in [[Decision log]]).
+Done: Victor pushed the branch and opened the pull request (tested locally by Victor, fine). Lama reviews and merges or drops it (see "Open decisions" in [[Decision log]]).
