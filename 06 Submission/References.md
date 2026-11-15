@@ -64,3 +64,4 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | Research Questions and Challenges for Improved Spacecraft Fire Detection, NASA, 2021 | https://ntrs.nasa.gov/citations/20210022143 | Reading list (link only) |
 | Material Flammability at Lunar and Martian Gravity, NASA, 2026 | https://ntrs.nasa.gov/citations/20260001966 | Reading list (link only) |
 | Flammability of Materials on the Moon, NASA, 2024 | https://ntrs.nasa.gov/citations/20240015307 | Reading list (link only) |
+| ISS-56 International Space Station fly-around (13) (NASA/Roscosmos, 2018; public domain) | https://commons.wikimedia.org/wiki/File:ISS-56_International_Space_Station_fly-around_(13).jpg | "Low Earth orbit" stop on the overview; replaces the STS-132 photo |

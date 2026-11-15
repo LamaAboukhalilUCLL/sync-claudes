@@ -132,6 +132,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Why:** more technical depth and usefulness without giving up the rule that nothing is invented. No language model writes text on the site, and no API key is needed (keeps D9).
 - **Note:** (3) partly reverses D16 (PSI only on the site). Only titles and links are shown; no figure comes from outside PSI. See [[2026-11-15 Step 7 matrix, ask the records, reading lists]].
 
+## D23 - Introduction with a route map, and a Habitat page
+- **When:** 15 Nov 2026
+- **Decided by:** Lama (her ideas; chosen from PNG previews: introduction A, habitat yes)
+- **What:** the overview opens with the problem in three steps and a route map from Earth to the Moon Base; a new Habitat page places the six open questions in a drawing of a habitat.
+- **Why:** the start should state the problem at a glance, and readers should see where each fire question sits in a habitat. See [[2026-11-15 Step 8 introduction, route map and habitat]].
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").

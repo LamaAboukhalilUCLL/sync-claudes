@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 12:05 (Claude Code, VS Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 12:25 (Claude Code, VS Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -19,6 +19,7 @@ _Last updated: Sun 15 Nov 2026, 12:05 (Claude Code, VS Code, for Lama)_
 - [x] Step 5d - design B chosen by Lama and applied to all pages ([[2026-11-15 Step 5d design B]])
 - [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
 - [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
+- [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
 
 ## In progress
 - [ ] **17:00**: Lama writes the project page text and the demo.
