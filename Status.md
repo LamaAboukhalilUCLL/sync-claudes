@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, evening (Claude Code, for Victor)_
+_Last updated: Sun 15 Nov 2026, 19:25 (Claude desktop app, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -31,6 +31,7 @@ _Last updated: Sun 15 Nov 2026, evening (Claude Code, for Victor)_
 - [x] Step 11b (Victor) - Ask upgrade: counted answers from NASA's tables, evidence reach for the chosen atmosphere, Moon/partial-gravity card, everyday-word glossary, related records by meaning, measured score (28 of 40 first, 32 of 40 in the first three; labels by Claude, unchecked); **on branch `victor/ask-upgrade`, waiting for Lama** ([[2026-11-15 Step 11b Ask upgrade (Victor)]])
 - [x] Step 11c (Victor) - search quality of Ask: test questions split into a tuning and a held-out half; headers, investigation ranking, rank fusion and title weight tried and not adopted; language model switched to snowflake-arctic-embed-s (Apache-2.0). Held-out half: 13 of 20 first and 17 in the first three (before: 13 and 16); by meaning alone 14 and 17 (before: 9 and 10). **Same branch `victor/ask-upgrade`, waiting for Lama** ([[2026-11-15 Step 11c search quality (Victor)]])
 - [x] Step 12 - SI maps what NASA wrote about each fire question, Ask search measured; branch `si-coverage` (`49572f3`); merged at 19:00 by mistake before checking Victor's branch, **merge undone** (`ee99c38`), waits until `victor/ask-upgrade` is merged ([[2026-11-15 Step 12 what NASA wrote about each question]])
+- [x] Step 13 - demo deck, 7 slides, built in Claude (Slides artifact) from Lama's full brief: site look, her numbers and quotations only; exportable as PowerPoint; still to check and share by public link ([[2026-11-15 Step 13 demo deck]])
 
 ## In progress
 - [ ] **Order of merges:** first Victor's `victor/ask-upgrade`, then `si-coverage` re-applied on top (Claude Code), keeping one Ask score. A teammate checks a sample of the labels.
@@ -47,7 +48,7 @@ _Last updated: Sun 15 Nov 2026, evening (Claude Code, for Victor)_
 ## Open questions
 - ~~Who is the Team Owner?~~ **Answered:** Lama Abou Khalil (team page "Data Beyond Space", Members tab, marked Team Owner). She is in Belgium, so the deadline is **Sun 15 Nov, 23:59 CET**.
 - ~~Does the Members tab show at least 2 people?~~ **Answered:** 6 members, all Belgium: Lama Abou Khalil, Mikho Demetrashvili, Nguyễn Thị Thanh Vy, Mylene Aradani, Lina Belabed, Victor Suciu. Still open: who does what.
-- Demo format (30-second video or 7 slides) and who owns it?
+- ~~Demo format (30-second video or 7 slides) and who owns it?~~ **Answered:** 7 slides, built from Lama's brief ([[2026-11-15 Step 13 demo deck]]).
 - Who or what wrote the two external briefs and the pasted plan? Needed for the SI use log (a row is waiting there).
 - BASS and Saffire-III state no oxygen value in their tables. Do we look for it in their documents, or present it as "not stated"?
 - PSI-10 (Flame Design) has a blank license field. Fine to use (it is NASA open data with a DOI), but worth a line in the references.
