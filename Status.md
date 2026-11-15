@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 16:35 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 17:00 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -27,6 +27,7 @@ _Last updated: Sun 15 Nov 2026, 16:35 (Claude, Cowork, for Victor)_
 - [x] Step 9 - droplet model and Analysis page, merged into `main` (`f841a17`) and live ([[2026-11-15 Step 9 droplet model on a branch]])
 - [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
 - [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 11 habitat check]])
+- [x] Step 11a (Victor) - two NASA documents added to the reading lists of two open questions (links only); **on branch `victor/reading-list-additions`, waiting for Lama** ([[2026-11-15 Step 11a two reading-list links (Victor)]])
 
 ## In progress
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].

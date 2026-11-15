@@ -155,6 +155,7 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
 - ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done (public and live, checked 15 Nov 12:30).
 - ~~**Approve Victor's 11 wording fixes** to the AI-written texts, the visible AI marks on the drawings ([[2026-11-15 Step 8b AI marks on drawings (Victor)]]) and the phone fix for the table pop-up ([[2026-11-15 Step 8d phone fix for the table pop-up (Victor)]]), all in the pull request from `victor/review-and-ai-marks`, before it is merged.~~ **Done:** merged as pull request #2 (`57a41b9`).
+- **Merge or drop two reading-list links** (NESC TM-20260003925 under the materials question, ICES-2025-392 under the gravity question), branch `victor/reading-list-additions`. Links only, no numbers. See [[2026-11-15 Step 11a two reading-list links (Victor)]].
 - **README and `.gitattributes` suggestions from the fresh-clone test** (Windows `py`, CSV line endings, search-index vectors). See [[2026-11-15 Step 8c eligibility checks and fresh-clone test (Victor)]]. Optional: add CFI-G's self-extinction counts as table evidence for the still-air point. See [[2026-11-15 Step 8a review of AI-written texts (Victor)]].
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
 - **Demo format:** 30-second video or 7 slides (Step 6).
