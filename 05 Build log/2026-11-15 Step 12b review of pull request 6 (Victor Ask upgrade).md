@@ -28,3 +28,13 @@ Pull request #6, branch `victor/ask-upgrade`, 13 commits, last `01e1991` (19:20)
 ## Decision for Lama
 - Model switch to snowflake-arctic-embed-s: same score with the word bonus, clearly better by meaning alone (helps questions that share no word with NASA's text); download 62 MB instead of about 50 MB; both models stay in the repository.
 - Merge order (Status): this pull request first, then `si-coverage` re-applied on top, keeping Victor's score on the Ask page.
+
+## Update, about 20:05: two fixes on branch `ask-fixes`
+Lama asked for findings 2 and 4. Claude Code was not allowed to push onto Victor's branch, so the fixes are on a new branch **`ask-fixes`**, made from Victor's latest commit (`46cac59`, 19:29) plus two commits:
+- `718b8df`: "drop" removed from the word list (`ask_glossary.json` and its copy inside `passages.json`; vectors untouched, so `ask_eval.json` stays valid; no test question contains "drop").
+- `a688c87`: "Read it in context" also marks the passage when the link is opened directly (the page loads the passages itself). Cache version 23.
+All checks pass. Tested in Chrome: a shared link opened directly marks the passage and scrolls to it; "Does the burning rate drop at low pressure?" no longer adds "droplet"; "bead" and "smoke alarm" still expand.
+**To use them:** Victor merges `ask-fixes` into `victor/ask-upgrade` (a fast-forward: `git pull origin ask-fixes`), or opens a pull request from `ask-fixes` into his branch.
+
+## Lama's idea for finding 3: a map by meaning (preview only, not pushed)
+Lama proposed an Obsidian-style graph instead of the similarity numbers. Built as a preview in the local copy: each investigation a dot coloured by what burns, joined to its three nearest by meaning (same similarities as `related.json`, recomputed from the stored vectors), a spring layout so closer text means a shorter line, hover highlights neighbours, drag moves a dot, click opens it. On investigation pages the numbers are replaced by the names and a "See it on the map" button; Explore gets a fourth tab "Map by meaning". The note under it says every pair lies between 0.86 and 0.99 similarity, so the map stretches a small range, and that it shows wording and topic, not test results. Waiting for Lama's yes or no.
