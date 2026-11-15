@@ -1,6 +1,6 @@
 # Eligibility checks and fresh-clone test (Victor)
 
-**Date:** Sun 15 Nov 2026, about 14:30 to 14:50 · **By:** Victor, with Claude (Cowork) running the checks. Nothing in either repository was changed.
+**Date:** Sun 15 Nov 2026, about 13:50 to 14:20 · **By:** Victor, with Claude (Cowork) running the checks. Nothing in either repository was changed.
 
 ## Why
 A judge must be able to open everything without a login, and the README promises that every number can be rebuilt. Both were untested by anyone outside the team.
@@ -28,11 +28,33 @@ A judge must be able to open everything without a login, and the README promises
 - **Ask page, live:** the model loaded ("Matching by meaning"); "Does smoke behave differently without gravity?" returned 8 results, the first from a SAME paper, with its source.
 - Repository and site public: confirmed earlier today (12:30).
 
+## Windows run by Victor (about 14:05 to 14:20)
+Fresh clone in a separate test folder (`NASA-Hackathon/fresh-clone-test/`), Windows, Git 2.55, Python 3.14.7, Node 24.20, npm 11.19. Clone at `f554eff`, 27 MB download, working tree clean.
+
+| Step | Result |
+|---|---|
+| `python --version` | **Fails**: "Python was not found" (Windows opens the Microsoft Store shortcut). `py` works. Common on Windows: `python` only exists if "Add python.exe to PATH" was ticked at install |
+| Site, `cd docs` then `py -m http.server 8000` | All pages opened and looked right; Ask worked |
+| `py scripts/build_dataset.py` | Passes |
+| `py scripts/validate.py` | All checks pass, 79 quotations (GitHub's version, without the review edits) |
+| `node scripts/check_recount.cjs` | Passes |
+| `git status` after the build | The same three CSVs as on Linux show as modified; `git diff --ignore-cr-at-eol` shows nothing, so line endings only (Git warns "CRLF will be replaced by LF") |
+| `npm install` | **Works**: 42 packages, 0 vulnerabilities. npm 11 skipped two install scripts (`onnxruntime-node`, `protobufjs`; "not yet covered by allowScripts") and the next step still worked |
+| `node scripts/build_search.mjs` | Works: "embedded 925 of 925", 311 passages from NASA records, 614 from 235 papers, 73 with an abstract |
+| `git status` after the search build | `docs/data/passages.json` modified. Compared with GitHub's copy: `about` and all 925 passage texts and sources are identical; the vectors differ slightly (4.6 % of the 355,200 numbers, by at most 3 on a scale of -127 to 127; every passage's old and new vector at least 99.1 % similar). Normal for a language model run on different machines; could at most swap two near-equal search results |
+
+Also run in Victor's working copy by mistake, on branch `victor/review-and-ai-marks`: build, validate (81 quotations) and recount pass with the review edits on Windows; the one CSV it touched differed only in line endings and was restored.
+
+### Suggestions for Lama (README and `.gitattributes`, her call)
+1. Under the README's commands: "On Windows, use `py` instead of `python`. On macOS or Linux, use `python3` if `python` is not found." (Replacing `python` with `py` would break it for macOS and Linux.)
+2. In `.gitattributes`: `docs/data/*.csv -text`, so a rebuild no longer shows the three CSVs as modified.
+3. In the README, one sentence: the search index rebuilds with the same passages, but its vectors can differ very slightly from machine to machine.
+
 ## Still to do by a person
 1. **Every one of the six members** confirms they are registered for the 2026 hackathon, in the Universal Event, and appear on the team's Members tab. This cannot be checked without each person's login.
 2. Open the site and the repository in a **private window** on a computer and on a phone; later the demo link too.
 3. A quick click-through in **Firefox** (and Safari if anyone has it); the Ask page is the most fragile part.
-4. Optional: `npm install` and `node scripts/build_search.mjs` on a Windows machine, to confirm the last README step.
+4. ~~Optional: `npm install` and `node scripts/build_search.mjs` on a Windows machine~~ Done, see the Windows run above.
 
 ## Next
 Lama: decide on the `.gitattributes` line and the stray PNG (both can go into the same commit as the review edits).
