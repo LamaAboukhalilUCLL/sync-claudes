@@ -107,6 +107,13 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** points, lines and status marks use the colour values NASA publishes in its Horizon Design System: NASA Red for the Moon Base line and for emphasis, NASA's dark-background chart palette for the fuel types, Active Green for a condition that is met, the Carbon greys for text and lines.
 - **Limits kept:** no NASA logo or insignia anywhere, and the footer still says the project is not affiliated with or endorsed by NASA. Commit `Data-Beyond-Space` after `ac5fd84`.
 
+## D19 - Design B, "the poster"
+- **When:** 15 Nov 2026
+- **Decided by:** Lama, from two previews
+- **What:** black page, large Moon photograph, condensed uppercase headlines, no cards, and one accent colour: NASA Red for the Moon Base only.
+- **Changes D18:** fuel types no longer have their own colours (tests are grey, solid materials white). The red and the greys remain NASA's values.
+- **Why:** the earlier look read as AI-made. See [[2026-11-15 Step 5d design B]].
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").

@@ -46,8 +46,8 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | NASA Space Apps 2026: Flame in Freefall challenge statement | https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/ | Source of the Moon Base atmosphere: 30 % oxygen or more at 10.2 psi or less |
 | The Earth seen from Apollo 17 (NASA, Apollo 17 crew; public domain) | https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg | "Earth" stop on the overview |
 | International Space Station after undocking of STS-132 (NASA, crew of STS-132; public domain) | https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg | "Low Earth orbit" stop on the overview |
-| Cormorant Garamond typeface (SIL OFL 1.1) | https://github.com/CatharsisFonts/Cormorant | Titles on the site |
-| Inter typeface (SIL OFL 1.1) | https://github.com/rsms/inter | Text on the site |
+| Barlow Condensed typeface (SIL OFL 1.1) | https://github.com/jpt/barlow | Headlines on the site |
+| Public Sans typeface (SIL OFL 1.1) | https://github.com/uswds/public-sans | Text on the site |
 | DM Mono typeface (SIL OFL 1.1) | https://github.com/googlefonts/dm-mono | Small labels on the site |
 | Fontsource (font files) | https://fontsource.org | Where the three font files were downloaded |
 | NASA Horizon Design System, hds-core | https://github.com/nasa/hds-core | Source of the site's colour values (NASA Red, NASA chart blue, Active Green, the Carbon greys, the chart palette for dark backgrounds) and of the choice of Inter and DM Mono. Only values are used: no NASA insignia, theme files or code |
