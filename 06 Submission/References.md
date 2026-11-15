@@ -65,3 +65,6 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | Material Flammability at Lunar and Martian Gravity, NASA, 2026 | https://ntrs.nasa.gov/citations/20260001966 | Reading list (link only) |
 | Flammability of Materials on the Moon, NASA, 2024 | https://ntrs.nasa.gov/citations/20240015307 | Reading list (link only) |
 | ISS-56 International Space Station fly-around (13) (NASA/Roscosmos, 2018; public domain) | https://commons.wikimedia.org/wiki/File:ISS-56_International_Space_Station_fly-around_(13).jpg | "Low Earth orbit" stop on the overview; replaces the STS-132 photo |
+| D. B. Hirsch, J. H. Williams, S. A. Harper, H. Beeson, M. D. Pedley, Oxygen Concentration Flammability Thresholds of Selected Aerospace Materials Considered for the Constellation Program, NASA White Sands Test Facility / Johnson Space Center, 2007 (public use permitted) | https://ntrs.nasa.gov/citations/20070018178 | **Data source** (the only one outside PSI): Earth-test table on the Habitat page. PDF and text in `data/external/wstf2007/` |
+| pypdf 7.1.0 (BSD-3-Clause) | https://github.com/py-pdf/pypdf | Used once to extract the text of the White Sands PDF |
+| P. Ferkul, LUCI lunar-gravity combustion presentation, ASGSR 2025 | https://ntrs.nasa.gov/citations/20250010653 | Read during the search for Moon-gravity data; not used on the site |

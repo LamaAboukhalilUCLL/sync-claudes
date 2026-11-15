@@ -144,6 +144,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** an Analysis page with an ordinary least squares model of NASA's FLEX droplet tests, checked by an independent refit, plus a near-miss count on the overview.
 - **Why:** FLEX is the only table with high oxygen and an outcome per test, so it is where real analysis is possible. Goes beyond D12 (no predictions) in a limited way: droplets only, inside tested conditions, with ranges. See [[2026-11-15 Step 9 droplet model on a branch]].
 
+## D25 - One table from outside PSI: Earth tests at Moon Base pressure
+- **When:** 15 Nov 2026
+- **Decided by:** Lama (her idea to look for NASA partner data on solids at 30 % oxygen or more; she said yes to building it)
+- **What:** the NASA White Sands Test Facility table of 2007 (NTRS 20070018178) is shown on the Habitat page, marked as not from PSI and as an Earth test. It is never mixed into the PSI counts.
+- **Why:** it is the nearest public NASA evidence on solids in Moon Base air, and it sharpens the insight: tested on Earth, not confirmed in space. Reverses D16 for this one table. See [[2026-11-15 Step 10 Earth tests from White Sands and fixes]].
+
 ## Open decisions
 - **Merge branch `droplet-model`?** and the wording for the 17 near-miss FLEX tests (D24).
 - **Confirm D14** (ranking conditions) and the D6 question inside it.

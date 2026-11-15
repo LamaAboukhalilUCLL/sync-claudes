@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 15:40 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 15:55 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -25,6 +25,7 @@ _Last updated: Sun 15 Nov 2026, 15:40 (Claude, Cowork, for Victor)_
 - [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. All members confirmed registered in the Universal Event (Victor, 15 Nov). **Still open:** Firefox click-through
 - [x] Step 9d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **goes into the same pull request, waiting for Lama** ([[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]])
 - [x] Step 9 - droplet model and Analysis page, on branch `droplet-model` (`d2e9403`), **not merged** ([[2026-11-15 Step 9 droplet model on a branch]])
+- [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; branch `droplet-model` (`e67c5c7`), **not merged** ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
 
 ## In progress
 - [ ] **Lama decides on branch `droplet-model`**: merge the Analysis page or not; how to word the 17 near-miss FLEX tests.
