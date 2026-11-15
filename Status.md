@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 17:00 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, evening (Claude Code, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -27,9 +27,11 @@ _Last updated: Sun 15 Nov 2026, 17:00 (Claude, Cowork, for Victor)_
 - [x] Step 9 - droplet model and Analysis page, merged into `main` (`f841a17`) and live ([[2026-11-15 Step 9 droplet model on a branch]])
 - [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
 - [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 11 habitat check]])
-- [x] Step 11a (Victor) - two NASA documents added to the reading lists of two open questions (links only); **on branch `victor/reading-list-additions`, waiting for Lama** ([[2026-11-15 Step 11a two reading-list links (Victor)]])
+- [x] Step 11a (Victor) - two NASA documents added to the reading lists of two open questions (links only); **merged into `main` (pull request #5, `0397c6f`)** ([[2026-11-15 Step 11a two reading-list links (Victor)]])
+- [x] Step 11b (Victor) - Ask upgrade: counted answers from NASA's tables, evidence reach for the chosen atmosphere, Moon/partial-gravity card, everyday-word glossary, related records by meaning, measured score (28 of 40 first, 32 of 40 in the first three; labels by Claude, unchecked); **on branch `victor/ask-upgrade`, waiting for Lama** ([[2026-11-15 Step 11b Ask upgrade (Victor)]])
 
 ## In progress
+- [ ] **Waiting for Lama:** review and merge or drop branch `victor/ask-upgrade` ([[2026-11-15 Step 11b Ask upgrade (Victor)]]). Before the score goes live, Victor re-labels the 40 test questions and checks the glossary.
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
 - [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
