@@ -78,7 +78,7 @@ Not shown to the judges (data collection only), but required. The judges see the
 >
 > The project's idea, asking how much of NASA's fire data applies to the new Moon Base habitats, is the team's: Lama proposed it after reading NASA's Moon Base page. The photographs are real NASA images, not AI-generated.
 
-**Open point for Lama: AI-drawn images.** Update 14:15: the marks and wording below are now made locally, waiting for her OK: [[2026-11-15 Step 9b AI marks on drawings (Victor)]].
+**Open point for Lama: AI-drawn images.** Update 14:15: the marks and wording below are now made locally, waiting for her OK: [[2026-11-15 Step 8b AI marks on drawings (Victor)]].
 - The rules say SI-generated images need a **visible watermark**. The habitat schematic, the route map and the logo were drawn by AI as SVG code.
 - On the site, the habitat page only says "The drawing is a schematic, not a NASA design". The footer says "Code and plain-language summaries were written with AI assistance", which does not cover drawings or the extracted attributes.
 - A small visible line under each drawing ("Drawn with AI assistance") and a footer that names drawings and extracted attributes would close this. Whether these count as "images" is debatable. A visible note costs little.

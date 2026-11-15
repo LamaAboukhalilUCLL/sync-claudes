@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 16:25 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 16:35 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -20,10 +20,10 @@ _Last updated: Sun 15 Nov 2026, 16:25 (Claude, Cowork, for Victor)_
 - [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
 - [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
-- [x] Step 9a (Victor) - review of the AI-written texts: 11 wording fixes, build and validate pass; **merged into `main` (pull request #2, `57a41b9`) and live** ([[2026-11-15 Step 9a review of AI-written texts (Victor)]])
-- [x] Step 9b (Victor) - visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **merged into `main` (pull request #2, `57a41b9`) and live** ([[2026-11-15 Step 9b AI marks on drawings (Victor)]])
-- [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. All members confirmed registered in the Universal Event (Victor, 15 Nov). **Still open:** Firefox click-through
-- [x] Step 9d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **merged into `main` (pull request #2) and live**; still to check on a real phone ([[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]])
+- [x] Step 8a (Victor) - review of the AI-written texts: 11 wording fixes, build and validate pass; **merged into `main` (pull request #2, `57a41b9`) and live** ([[2026-11-15 Step 8a review of AI-written texts (Victor)]])
+- [x] Step 8b (Victor) - visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **merged into `main` (pull request #2, `57a41b9`) and live** ([[2026-11-15 Step 8b AI marks on drawings (Victor)]])
+- [x] Step 8c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 8c eligibility checks and fresh-clone test (Victor)]]). Private window on Chrome (computer) checked by Victor: fine. All members confirmed registered in the Universal Event (Victor, 15 Nov). **Still open:** Firefox click-through
+- [x] Step 8d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **merged into `main` (pull request #2) and live**; still to check on a real phone ([[2026-11-15 Step 8d phone fix for the table pop-up (Victor)]])
 - [x] Step 9 - droplet model and Analysis page, merged into `main` (`f841a17`) and live ([[2026-11-15 Step 9 droplet model on a branch]])
 - [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
 - [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; merged into `main` (`f841a17`) and live ([[2026-11-15 Step 11 habitat check]])
@@ -35,8 +35,8 @@ _Last updated: Sun 15 Nov 2026, 16:25 (Claude, Cowork, for Victor)_
 
 ## Next
 - [x] ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done: the repository shows as public and the site is live (checked 15 Nov, 12:30). Still to do: open the link in a private window.
-- [x] ~~Lama approves Victor's review edits, then they are pushed~~ Done: pull request #2 merged ([[2026-11-15 Step 9a review of AI-written texts (Victor)]])
-- [ ] Project page text, demo (30-second video or 7 slides), submission checklist (next step number is Lama's; 9a to 9d are Victor's checks, beside her Step 9)
+- [x] ~~Lama approves Victor's review edits, then they are pushed~~ Done: pull request #2 merged ([[2026-11-15 Step 8a review of AI-written texts (Victor)]])
+- [ ] Project page text, demo (30-second video or 7 slides), submission checklist (next step number is Lama's; 8a to 8d are Victor's checks)
 
 ## Open questions
 - ~~Who is the Team Owner?~~ **Answered:** Lama Abou Khalil (team page "Data Beyond Space", Members tab, marked Team Owner). She is in Belgium, so the deadline is **Sun 15 Nov, 23:59 CET**.
