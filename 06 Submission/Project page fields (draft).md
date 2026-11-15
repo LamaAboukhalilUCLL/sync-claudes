@@ -2,6 +2,8 @@
 
 **Added:** Sun 15 Nov 2026, 13:40 · **By:** Victor, with Claude (Cowork) compiling from the vault and the repository. **Draft for Lama.** The summary, the description and the project name are hers to write (rule 5: the ideas are hers). Everything else here is compiled and checked, ready to paste.
 
+**Updated:** Sun 15 Nov 2026, 17:10, to match the live site (`main`, `f841a17`: White Sands table, Check your habitat, droplet Analysis page). Numbers re-run with `build_dataset.py`, `build_external.py` and `validate.py` on that commit.
+
 Fields follow the order of the Project tab ([[Notes about project guide]], Project Submission Guide). Character and word limits as the guide states them.
 
 ---
@@ -13,17 +15,18 @@ Fields follow the order of the Project tab ([[Notes about project guide]], Proje
 **Lama writes.** The guide asks three things: what did you develop, how does it address the challenge, why is it important.
 
 ### Numbers she can use (all checked)
-Source: the build and `validate.py` run on 15 Nov, 13:00, on the current data. Each one is also on the site.
+Source: the build and `validate.py` run on `main` (`f841a17`), 15 Nov, 17:05. Each one is also on the site.
 
 | Fact | Value | Where it comes from |
 |---|---|---|
 | Combustion investigations in PSI, all used | 24 | snapshot, `dataset.json` |
 | Experimental tables read | 22 (from 20 investigations) | `dataset.json` |
-| Table rows naming a fuel or material, all searchable | 1,982 | `tests.json` |
+| Table rows naming a fuel or material, all searchable | 1,990 | `dataset.json` (`entry_rows`; 1,982 before Lama's Step 10) |
 | Tests stating ambient oxygen as a plain number | 876 | `validate.py` |
 | ...of those at 30 % oxygen or more | 270: 246 gas flames, 24 droplets, **0 solid materials** | `validate.py`, `dataset.json` |
 | Tests stating both oxygen and pressure | 659 | `validate.py` |
 | ...inside Moon Base air (30 % or more, 10.2 psi or less) | **20**, all gas flames in one investigation (ACME CFI-G, PSI-159) | `validate.py` |
+| ...narrowly missing the pressure limit (10.33 to 10.5 psi) | 17, all FLEX droplets (PSI-69) | `validate.py` (`rows_near_zone`) |
 | Oxygen range of every solid-material test that states it | 13.6 to 22.2 % (129 tests, BASS-II) | `validate.py` |
 | Investigations that state ambient oxygen / pressure in their table | 10 / 5 of 24 | `dataset.json` |
 | Records that mention the Moon, Mars or partial gravity | 0 of 24 | `dataset.json` |
@@ -31,11 +34,14 @@ Source: the build and `validate.py` run on 15 Nov, 13:00, on the current data. E
 | Where the tests were run (route map) | Earth 5, low Earth orbit 19, Moon Base 0 | site overview |
 | Publications PSI lists / unique DOIs / with an abstract | 352 / 235 / 73 | `dataset.json` |
 | Passages the Ask page searches | 925 (311 from NASA records, 614 from papers) | [[2026-11-15 Step 7 matrix, ask the records, reading lists]] |
-| Quotations checked word for word by program | 81 | `validate.py` (after Victor's review edits; 79 before) |
+| Quotations checked word for word by program | 81 | `validate.py` |
+| NASA White Sands Earth tests at Moon Base pressure (70.1 kPa, 10.17 psi), the one table not from PSI | 24 materials in 26 samples; at 30 % oxygen **7 fail** on Earth, 19 pass, **0 confirmed in space** | `earth_tests.json`, Habitat page ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]]) |
+| FLEX droplet tests in the Analysis page's model | 274 | [[2026-11-15 Step 9 droplet model on a branch]] |
 
 Wording NASA itself uses, safe to quote:
 - Moon Base and pressurized rovers, challenge statement word for word: "The intermediate oxygen concentration used on the Moon will likely be 30% or greater, with a corresponding pressure of 10.2 psi or less." and "that's more than a 40% increase in the oxygen concentration making materials much more flammable."
 - Why the oxygen goes up: lower risk of decompression sickness, more frequent spacewalks ([[Challenge video]]).
+- NASA confirming the gap the site shows, word for word (NASA Engineering and Safety Center, NASA/TM-20260003925, May 2026, https://ntrs.nasa.gov/citations/20260003925): "NASA has limited material flammability data at O2 concentration higher than 30%" and "Essentially all existing test data for flammability of flight materials are from 1-g testing". Fits the "why is it important" part of the summary or the description. Found by Victor's search, 15 Nov ([[References]]).
 
 ## 3. Link to project demo
 **To do** once the demo exists (format still open: 30-second video or at most 7 slides). Public link, no login. A slide deck must show **team name, all member names and the challenge**:
@@ -47,13 +53,13 @@ Wording NASA itself uses, safe to quote:
 - Website: https://lamaaboukhalilucll.github.io/Data-Beyond-Space/ (live, checked 15 Nov 12:30)
 - Repository (name it in the description): https://github.com/LamaAboukhalilUCLL/Data-Beyond-Space (public, checked 15 Nov 12:30)
 
-Still to do: open both in a private window, logged out, on a computer and a phone.
+Private window on a computer: checked by Victor (Chrome), fine. Phone: checked by Victor; the table pop-up bug he found is fixed and live ([[2026-11-15 Step 8d phone fix for the table pop-up (Victor)]]). Still open: Firefox.
 
 ## 5. Detailed project description
 **Lama writes.** The guide's questions: what does it do and how does it work; what benefits; what do you hope to achieve; what tools, coding languages, hardware or software; how is it creative; what factors (energy, cost, accessibility) were considered.
 
 ### Ready-made: tools, languages, software
-> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for two helper scripts (`check_recount.cjs`, `build_search.mjs`). In-browser search with the open model all-MiniLM-L6-v2 run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian.
+> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for two helper scripts (`check_recount.cjs`, `build_search.mjs`). In-browser search with the open model all-MiniLM-L6-v2 run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian. Since Step 9 to 11 also: `build_external.py` (reads the NASA White Sands table from the paper's text, with pypdf 7.1.0 used once to extract that text), `analyze_flex.py` and `check_model.cjs` (the droplet model on the Analysis page).
 
 ### Ready-made: how it stays honest (facts from the README, for the "how it works" part)
 - A snapshot of NASA's files is stored byte for byte, with a SHA-256 checksum for each of the 47 files; `validate.py` re-checks them.
@@ -78,7 +84,7 @@ Not shown to the judges (data collection only), but required. The judges see the
 >
 > The project's idea, asking how much of NASA's fire data applies to the new Moon Base habitats, is the team's: Lama proposed it after reading NASA's Moon Base page. The photographs are real NASA images, not AI-generated.
 
-**Open point for Lama: AI-drawn images.** Update 14:15: the marks and wording below are now made locally, waiting for her OK: [[2026-11-15 Step 8b AI marks on drawings (Victor)]].
+**AI-drawn images: done.** The visible marks and the footer, Data page and README wording are merged and live (pull request #2, [[2026-11-15 Step 8b AI marks on drawings (Victor)]]). The background below is kept for the record.
 - The rules say SI-generated images need a **visible watermark**. The habitat schematic, the route map and the logo were drawn by AI as SVG code.
 - On the site, the habitat page only says "The drawing is a schematic, not a NASA design". The footer says "Code and plain-language summaries were written with AI assistance", which does not cover drawings or the extracted attributes.
 - A small visible line under each drawing ("Drawn with AI assistance") and a footer that names drawings and extracted attributes would close this. Whether these count as "images" is debatable. A visible note costs little.
@@ -116,6 +122,7 @@ At least one NASA source is required for a Global Award.
 | PSI-117: External Thermo-Convective Perturbation on Cool Flame Dynamics (CFD) | https://doi.org/10.60555/gz0q-b577 |
 | PSI-142: Cool Flame Transitions Using Counterflow Flames | https://doi.org/10.60555/80qf-vj95 |
 | PSI-159: ACME CFI-G, Cool Flames Investigation with Gases | https://doi.org/10.60555/cyt1-kh64 |
+| NASA White Sands Test Facility: Hirsch et al., Oxygen Concentration Flammability Thresholds of Selected Aerospace Materials Considered for the Constellation Program (2007) | https://ntrs.nasa.gov/citations/20070018178 |
 
 All 24 DOIs were checked against the `doi` field of each record in `data/psi/raw/` (24 of 24 match). Clicking the DOI links is still to be tested.
 
@@ -133,12 +140,14 @@ All 24 DOIs were checked against the `doi` field of each record in `data/psi/raw
 | Material Flammability at Lunar and Martian Gravity (NASA, 2026) | https://ntrs.nasa.gov/citations/20260001966 |
 | Flammability of Materials on the Moon (NASA, 2024) | https://ntrs.nasa.gov/citations/20240015307 |
 | Fire-Resistant Textile Development (NASA, 2026) | https://ntrs.nasa.gov/citations/20260003042 |
+| Impacts of Reduced Pressure Atmospheres on Environmental Control and Life Support Systems (ECLSS) Architectures (NASA Engineering and Safety Center, 2026) | https://ntrs.nasa.gov/citations/20260003925 |
+| Solid Fuel Ignition Testing for Lunar Applications, Theory and Experimental Results (NASA Glenn and White Sands, ICES-2025-392) | https://ntrs.nasa.gov/citations/20250002114 |
 | Photograph: Moon nearside, Lunar Reconnaissance Orbiter mosaic (NASA/GSFC/Arizona State University, public domain) | https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg |
 | Photograph: The Earth seen from Apollo 17 (NASA, public domain) | https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg |
 | Photograph: ISS-56 International Space Station fly-around (NASA/Roscosmos, public domain) | https://commons.wikimedia.org/wiki/File:ISS-56_International_Space_Station_fly-around_(13).jpg |
 | NASA Horizon Design System (colour values only; no insignia) | https://github.com/nasa/hds-core |
 
-The eight NTRS reports are the site's reading lists (links and titles only; no number is taken from them). All eight were matched against the site's content file.
+The NTRS reports above are the site's reading lists (links and titles only; no number is taken from them), except the White Sands paper, which is the one data source outside PSI (D25). The last two rows (2026 NESC report, ICES-2025-392) are on the site only if Lama merges `victor/reading-list-additions`; if she drops it, keep the NESC report anyway if its quote is used in the text, and remove the ICES row.
 
 ## 8. Space Agency Partner data and other references
 Space Agency Partner data: **none used.**
@@ -156,6 +165,7 @@ Space Agency Partner data: **none used.**
 | Fontsource (font files) | https://fontsource.org |
 | Wikimedia Commons (source pages of the three NASA photographs) | https://commons.wikimedia.org |
 | Python 3 standard library | https://docs.python.org/3/library/ |
+| pypdf 7.1.0 (BSD-3-Clause), used once to extract the text of the White Sands PDF | https://github.com/py-pdf/pypdf |
 | Node.js | https://nodejs.org |
 | GitHub Pages (hosting) | https://pages.github.com |
 | Claude (Anthropic), AI assistant: research, code, texts, drawings (see Use of SI) | https://www.anthropic.com/claude |
