@@ -142,7 +142,7 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
 - ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done (public and live, checked 15 Nov 12:30).
-- **Approve Victor's 11 wording fixes** to the AI-written texts, and the visible AI marks on the drawings ([[2026-11-15 AI marks on drawings (Victor)]]), before they are pushed.
-- **README and `.gitattributes` suggestions from the fresh-clone test** (Windows `py`, CSV line endings, search-index vectors). See [[2026-11-15 Eligibility checks and fresh-clone test (Victor)]]. Optional: add CFI-G's self-extinction counts as table evidence for the still-air point. See [[2026-11-15 Review of AI-written texts (Victor)]].
+- **Approve Victor's 11 wording fixes** to the AI-written texts, and the visible AI marks on the drawings ([[2026-11-15 Step 9b AI marks on drawings (Victor)]]), before they are pushed.
+- **README and `.gitattributes` suggestions from the fresh-clone test** (Windows `py`, CSV line endings, search-index vectors). See [[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]. Optional: add CFI-G's self-extinction counts as table evidence for the still-air point. See [[2026-11-15 Step 9a review of AI-written texts (Victor)]].
 - **AI provider** for cited answers (Step 5). Options: [[AI provider and hosting options]].
 - **Demo format:** 30-second video or 7 slides (Step 6).

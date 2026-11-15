@@ -1,12 +1,12 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 14:25 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 14:40 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
 - [x] Step 1a - PSI snapshot saved and oxygen evidence table built ([[2026-11-14 Step 1a oxygen evidence pass]])
 - [x] Step 1b - external briefs checked against the snapshot ([[2026-11-14 Step 1b vetting the external briefs]])
-- [x] Side task - publication abstracts, outside the steps ([[2026-11-14 Side task publication abstracts]])
+- [x] Step 1 side task (Victor) - publication abstracts, outside the steps ([[2026-11-14 Step 1 side task publication abstracts (Victor)]])
 - [x] Step 1c - Victor's work reviewed against the snapshot; D10: judges see `Data-Beyond-Space` ([[2026-11-14 Step 1c review of Victor's work]])
 - [x] Web research: what NASA says it needs, matched to our data ([[NASA stated fire safety needs]])
 
@@ -20,9 +20,9 @@ _Last updated: Sun 15 Nov 2026, 14:25 (Claude, Cowork, for Victor)_
 - [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
 - [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
-- [x] Review of the AI-written texts by Victor: 11 wording fixes, build and validate pass; **local, not pushed, waiting for Lama** ([[2026-11-15 Review of AI-written texts (Victor)]])
-- [x] Visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **local, not pushed, waiting for Lama** ([[2026-11-15 AI marks on drawings (Victor)]])
-- [x] Fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Eligibility checks and fresh-clone test (Victor)]]). **Still open:** every member confirms registration in the Universal Event; private-window and phone check; Firefox click-through
+- [x] Step 9a (Victor) - review of the AI-written texts: 11 wording fixes, build and validate pass; **local, not pushed, waiting for Lama** ([[2026-11-15 Step 9a review of AI-written texts (Victor)]])
+- [x] Step 9b (Victor) - visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **local, not pushed, waiting for Lama** ([[2026-11-15 Step 9b AI marks on drawings (Victor)]])
+- [x] Step 9c (Victor) - fresh clone rebuilds and validates on Linux and on Windows (incl. `npm install` and the search index); all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Step 9c eligibility checks and fresh-clone test (Victor)]]). **Still open:** every member confirms registration in the Universal Event; private-window and phone check; Firefox click-through
 
 ## In progress
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
@@ -31,8 +31,8 @@ _Last updated: Sun 15 Nov 2026, 14:25 (Claude, Cowork, for Victor)_
 
 ## Next
 - [x] ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done: the repository shows as public and the site is live (checked 15 Nov, 12:30). Still to do: open the link in a private window.
-- [ ] Lama approves Victor's review edits, then they are pushed ([[2026-11-15 Review of AI-written texts (Victor)]])
-- [ ] Step 6 - project page text, demo (30-second video or 7 slides), submission checklist
+- [ ] Lama approves Victor's review edits, then they are pushed ([[2026-11-15 Step 9a review of AI-written texts (Victor)]])
+- [ ] Step 10 - project page text, demo (30-second video or 7 slides), submission checklist. (Listed earlier as Step 6; Steps 6 to 8 are now the dashboard steps, and Step 9 is Victor's pre-submission checks, 9a to 9c. Renumber if Lama prefers.)
 
 ## Open questions
 - ~~Who is the Team Owner?~~ **Answered:** Lama Abou Khalil (team page "Data Beyond Space", Members tab, marked Team Owner). She is in Belgium, so the deadline is **Sun 15 Nov, 23:59 CET**.
