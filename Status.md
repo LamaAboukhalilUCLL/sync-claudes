@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 20:00 (Claude Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 20:05 (Claude Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -36,7 +36,7 @@ _Last updated: Sun 15 Nov 2026, 20:00 (Claude Code, for Lama)_
 - [x] Review fixes merged into `main` and live (`bb98735`): word list without "drop", shared context links mark the passage
 - [x] Step 12 re-applied on top of Victor's Ask upgrade: branch `si-coverage-2` (`c0c6270`), merged ([[2026-11-15 Step 12 what NASA wrote about each question]])
 - [x] Step 12 merged into `main` and live (cache version 24)
-- [x] Step 14 - the next test that would teach the most: branch `next-test`, **waiting for Lama to say merge** ([[2026-11-15 Step 14 next test that would teach the most]])
+- [x] Step 14 - the next test that would teach the most: merged into `main` (`9ade543`) and live ([[2026-11-15 Step 14 next test that would teach the most]])
 
 ## In progress
 - [ ] Merge `si-coverage-2` (Lama). A teammate checks a sample of the labels. Map by meaning: preview waiting for Lama's yes or no.

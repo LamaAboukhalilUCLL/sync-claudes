@@ -1,4 +1,4 @@
-# Step 14 - the next test that would teach the most (idea 2), branch `next-test`, not merged
+# Step 14 - the next test that would teach the most (idea 2), merged and live
 
 _Sun 15 Nov 2026, about 19:55 to 20:00 by the machine clock. Claude Code in VS Code, for Lama._
 
@@ -23,4 +23,4 @@ On the Analysis page, a new section for the condition set with the sliders (it s
 ## Checked
 All checks pass (build, validate, recount, model check with the new verification, Ask check). In Chrome: tiles and map render, they follow the sliders and the fuel switch, no console errors.
 
-**Waiting for Lama** to say merge.
+**Merged** at Lama's word: `next-test` fast-forwarded into `main` (`9ade543`) after re-checking Status, open pull requests (none) and teammates' branches; all checks passed; live with cache version 25. On the live site, in a fresh Chrome profile, the section shows the same numbers, follows the sliders and the fuel switch, and logs no errors.
