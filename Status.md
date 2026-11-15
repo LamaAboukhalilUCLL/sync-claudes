@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 15:55 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 16:10 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -26,6 +26,7 @@ _Last updated: Sun 15 Nov 2026, 15:55 (Claude, Cowork, for Victor)_
 - [x] Step 9d (Victor) - phone check found the table pop-up opening off-screen; one-line CSS fix, tested on emulated phones and desktop; **goes into the same pull request, waiting for Lama** ([[2026-11-15 Step 9d phone fix for the table pop-up (Victor)]])
 - [x] Step 9 - droplet model and Analysis page, on branch `droplet-model` (`d2e9403`), **not merged** ([[2026-11-15 Step 9 droplet model on a branch]])
 - [x] Step 10 - Earth tests from NASA White Sands on the Habitat page, near-miss and Saffire-II wording fixed; branch `droplet-model` (`e67c5c7`), **not merged** ([[2026-11-15 Step 10 Earth tests from White Sands and fixes]])
+- [x] Step 11 - "Check your habitat": the drawing is the tool, with a downloadable report; branch `droplet-model` (`e6e42e3`), **not merged** ([[2026-11-15 Step 11 habitat check]])
 
 ## In progress
 - [ ] **Lama decides on branch `droplet-model`**: merge the Analysis page or not; how to word the 17 near-miss FLEX tests.
