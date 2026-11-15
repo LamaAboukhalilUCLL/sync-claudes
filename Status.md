@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 11:30 (Claude Code, VS Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 12:05 (Claude Code, VS Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -18,10 +18,9 @@ _Last updated: Sun 15 Nov 2026, 11:30 (Claude Code, VS Code, for Lama)_
 - [x] Step 5c - design round two: fonts, logo, NASA photos, plainer labels ([[2026-11-15 Step 5c design round two]])
 - [x] Step 5d - design B chosen by Lama and applied to all pages ([[2026-11-15 Step 5d design B]])
 - [x] Step 6 - atmosphere chooser and material finder, live ([[2026-11-15 Step 6 atmosphere chooser and finder]])
-- [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; committed (`0663cde`), **not yet live** ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
+- [x] Step 7 - attribute matrix, Ask the records, reading lists outside PSI; live on GitHub Pages since 12:00 (`0663cde`); Ask tested on the live site in Chrome ([[2026-11-15 Step 7 matrix, ask the records, reading lists]])
 
 ## In progress
-- [ ] **Lama allows the blocked push**: GitHub flags a line of the Transformers.js library as a secret (false alarm). Open the unblock link GitHub printed, choose "It's a false positive", then push again.
 - [ ] **17:00**: Lama writes the project page text and the demo.
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
 - [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.

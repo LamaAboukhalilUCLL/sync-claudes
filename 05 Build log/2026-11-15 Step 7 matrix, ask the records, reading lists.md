@@ -23,3 +23,6 @@ After an honest look at technical depth against the judging criteria, Lama chose
 
 ## Is the data enough? (Lama's question)
 For what the site claims, yes: it uses every one of the 24 records and every row of the 22 tables, and its finding is about what PSI holds and does not hold. More data would not change that count. Thin spots: only 73 of 235 papers have an abstract, almost none for the solid-material investigations, so Ask is weaker there; the raw files and PSI documents are not read.
+
+## Update, about 12:00
+Lama allowed the flagged line on GitHub (false positive) and the push went through. All new files are served by GitHub Pages. In a fresh Chrome profile the live Ask page reached "Matching by meaning" within five seconds, gave results for a fire question and nothing for "banana bread recipe". Still not tested: phones, Firefox, Safari.
