@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `7262f78`; Lama works on the slides._
+_Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `09109b2`; Lama works on the slides._
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])

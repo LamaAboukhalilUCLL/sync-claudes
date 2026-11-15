@@ -2,7 +2,7 @@
 
 **Added:** Sun 15 Nov 2026, 13:40 · **By:** Victor, with Claude (Cowork) compiling from the vault and the repository. **Draft for Lama.** The summary, the description and the project name are hers to write (rule 5: the ideas are hers). Everything else here is compiled and checked, ready to paste.
 
-**Updated:** Sun 15 Nov 2026, 20:24, by Claude Code for Lama, to match the final live site (`main`, `7262f78`; code frozen, Lama works on the slides): Ask upgrade merged (pull request #6) with snowflake-arctic-embed-s, coverage of NASA's text by question, the next test that would teach the most, the map by meaning. New checked numbers added to the table; Use of SI no longer conditional. Earlier updates: 18:30 and 17:10 (Victor).
+**Updated:** Sun 15 Nov 2026, 20:24, by Claude Code for Lama, to match the final live site (`main`, `09109b2`; code frozen, Lama works on the slides): Ask upgrade merged (pull request #6) with snowflake-arctic-embed-s, coverage of NASA's text by question, the next test that would teach the most, the map by meaning. New checked numbers added to the table; Use of SI no longer conditional. Earlier updates: 18:30 and 17:10 (Victor).
 
 Fields follow the order of the Project tab ([[Notes about project guide]], Project Submission Guide). Character and word limits as the guide states them.
 
