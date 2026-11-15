@@ -1,6 +1,6 @@
 # Step 9 - a checked statistical model of the FLEX droplet tests (branch `droplet-model`, not merged)
 
-_Sun 15 Nov 2026, about 15:20 to 16:05. Claude Code in VS Code, for Lama._
+_Sun 15 Nov 2026, about 15:20 to 15:40. Claude Code in VS Code, for Lama._
 
 ## What Lama asked for
 More technical depth that is correct and useful for NASA engineers, on a new branch, with freedom to choose the most useful thing. She found the Ask page too simple ("just returning documents").
