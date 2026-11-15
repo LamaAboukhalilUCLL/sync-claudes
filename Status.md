@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 19:53 (Claude Code, for Lama)_
+_Last updated: Sun 15 Nov 2026, 20:15 (Claude Code, for Lama)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -34,7 +34,9 @@ _Last updated: Sun 15 Nov 2026, 19:53 (Claude Code, for Lama)_
 - [x] Step 13 - demo deck, 7 slides, built in Claude (Slides artifact) from Lama's full brief: site look, her numbers and quotations only; exportable as PowerPoint; still to check and share by public link ([[2026-11-15 Step 13 demo deck]])
 - [x] Step 12b - pull request #6 (Victor) reviewed: all checks pass, merges cleanly, no errors in the browser; 2 fixes before merging (unchecked labels, "drop" in the word list), 2 worth fixing ([[2026-11-15 Step 12b review of pull request 6 (Victor Ask upgrade)]])
 - [x] Review fixes merged into `main` and live (`bb98735`): word list without "drop", shared context links mark the passage
-- [x] Step 12 re-applied on top of Victor's Ask upgrade: branch `si-coverage-2` (`c0c6270`), **waiting for Lama to say merge** ([[2026-11-15 Step 12 what NASA wrote about each question]])
+- [x] Step 12 re-applied on top of Victor's Ask upgrade: branch `si-coverage-2` (`c0c6270`), merged ([[2026-11-15 Step 12 what NASA wrote about each question]])
+- [x] Step 12 merged into `main` and live (cache version 24)
+- [x] Step 14 - the next test that would teach the most: branch `next-test`, **waiting for Lama to say merge** ([[2026-11-15 Step 14 next test that would teach the most]])
 
 ## In progress
 - [ ] Merge `si-coverage-2` (Lama). A teammate checks a sample of the labels. Map by meaning: preview waiting for Lama's yes or no.
