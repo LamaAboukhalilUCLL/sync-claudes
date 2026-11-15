@@ -28,3 +28,11 @@ All checks pass (data build, external table, validate, recount, model check, top
 - The labels are the judgement of a language model following a guide. A person should check a sample (for example 30 random passages).
 - These count what NASA wrote about, not tests run. Duplicated record text (Saffire I to III, SAME and SAME-R) counts once per passage; the page also gives distinct records and papers.
 - Idea 2 not built yet.
+
+## Update, about 19:05: merged, then undone
+Lama said "merge". Claude Code merged `si-coverage` into `main` (`bfe1f4b`) and pushed **without first reading Status**, where Victor's branch `victor/ask-upgrade` was listed as waiting for Lama. That branch touches the same files (Ask page, README, styles) and also measures the Ask search, so it no longer merged cleanly. Lama asked to undo the merge.
+- `main` was reverted with commit `ee99c38`; `main` is now identical to its state before the merge, and the live site is back to the previous version.
+- Victor's branch merges cleanly into `main` again (tested without merging).
+- Victor's branch keeps the same 925 passage texts (checksum compared), so the labels in `si-coverage` stay valid with his new language model.
+- **To re-apply later:** after Victor's branch is merged, revert the revert (`git revert ee99c38`) or merge `si-coverage` again with that revert undone, then resolve the overlap on the Ask page (keep one score) and rebuild `topics.json` with the model then in use.
+- Lesson recorded: pull the vault and read Status before any merge or push to `main`.
