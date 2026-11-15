@@ -8,8 +8,8 @@ The Project Submission Guide: SI-generated images "must include a visible waterm
 ## What was changed
 | File | Change |
 |---|---|
-| `docs/app.js` | A visible line directly under the route map: "Drawing made with AI assistance (Claude, Anthropic). The photographs are NASA's." |
-| `docs/app.js` | A visible line directly under the habitat schematic: "Schematic drawn with AI assistance (Claude, Anthropic); not a NASA design." |
+| `docs/app.js` | A visible line directly under the route map: "Drawing made with AI assistance. The photographs are NASA's." |
+| `docs/app.js` | A visible line directly under the habitat schematic: "Schematic drawn with AI assistance; not a NASA design." |
 | `docs/app.js` | Data page, "How AI was used": "three jobs" becomes "four jobs"; new item: the logo, route map and habitat schematic were drawn as code with AI assistance, each carries a note, the photographs are NASA's |
 | `docs/styles.css` | One rule `.ai-mark`, same size and colour as the existing `.ai` label |
 | `docs/index.html` | Footer sentence now also names the extracted attributes and the drawings (logo, route map, habitat schematic); the HTML comment and the `ai-assistance` meta tag say the same |
@@ -18,6 +18,8 @@ The Project Submission Guide: SI-generated images "must include a visible waterm
 | `docs/img/CREDITS.md` | New "Drawings" section for the route map and the habitat schematic |
 
 No data, number, quotation or design was changed.
+
+The two marks under the drawings say only "made with AI assistance" (shorter on the page, Victor's choice); the tool, Claude (Anthropic), is named in the footer, on the Data page, in the README and in [[SI use log]].
 
 ## How it was tested
 The edited site was served locally with the data from the build of 13:00 and rendered in headless Chromium at 1440 px:
