@@ -59,7 +59,7 @@ Private window on a computer: checked by Victor (Chrome), fine. Phone: checked b
 **Lama writes.** The guide's questions: what does it do and how does it work; what benefits; what do you hope to achieve; what tools, coding languages, hardware or software; how is it creative; what factors (energy, cost, accessibility) were considered.
 
 ### Ready-made: tools, languages, software
-> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for two helper scripts (`check_recount.cjs`, `build_search.mjs`). In-browser search with the open model all-MiniLM-L6-v2 run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian. Since Step 9 to 11 also: `build_external.py` (reads the NASA White Sands table from the paper's text, with pypdf 7.1.0 used once to extract that text), `analyze_flex.py` and `check_model.cjs` (the droplet model on the Analysis page).
+> Plain HTML, CSS and JavaScript (no framework), published with GitHub Pages from the repository's `docs/` folder. Data pipeline in Python 3 using only the standard library (`fetch_snapshot.py`, `fetch_papers.py`, `build_dataset.py`, `validate.py`). Node.js for two helper scripts (`check_recount.cjs`, `build_search.mjs`). In-browser search with the open model snowflake-arctic-embed-s (all-MiniLM-L6-v2 until Step 11c; pending Lama's decision) run by Transformers.js 4.3.2 and ONNX Runtime Web; no server, no API key, no data leaves the reader's computer. Code and notes kept in Git (GitHub); team notes in Obsidian. Since Step 9 to 11 also: `build_external.py` (reads the NASA White Sands table from the paper's text, with pypdf 7.1.0 used once to extract that text), `analyze_flex.py` and `check_model.cjs` (the droplet model on the Analysis page).
 
 ### Ready-made: how it stays honest (facts from the README, for the "how it works" part)
 - A snapshot of NASA's files is stored byte for byte, with a SHA-256 checksum for each of the 47 files; `validate.py` re-checks them.
@@ -80,7 +80,7 @@ Not shown to the judges (data collection only), but required. The judges see the
 >   - draw the habitat schematic, the route map and the team logo as SVG code;
 >   - remove the black sky from a NASA photograph of the space station with a script.
 > - **ChatGPT (OpenAI)** produced one design mockup of the overview page, watermarked as AI-generated. The page layout follows it; the image is not on the site.
-> - **all-MiniLM-L6-v2**, an open language model, runs in the reader's browser on the "Ask" page. It only matches a question to NASA's sentences and writes no text.
+> - **snowflake-arctic-embed-s** (Snowflake; it replaced all-MiniLM-L6-v2 in Step 11c, pending Lama's decision), an open language model, runs in the reader's browser on the "Ask" page. It only matches a question to NASA's sentences and writes no text.
 > - **Only if Lama merges `victor/ask-upgrade` (Step 11b):** Claude proposed six improvements to the Ask page and Claude Code built them: counted answers from NASA's tables, how far the evidence reaches into the chosen atmosphere, a notice when NASA has no Moon or Mars gravity data, a word list for everyday terms, related investigations by meaning, and a measured score (40 test questions). The word list and the test-question labels were drafted by Claude; say here whether a team member checked them. If the branch is dropped, delete this bullet.
 >
 > The project's idea, asking how much of NASA's fire data applies to the new Moon Base habitats, is the team's: Lama proposed it after reading NASA's Moon Base page. The photographs are real NASA images, not AI-generated.
@@ -156,7 +156,8 @@ Space Agency Partner data: **none used.**
 | Link text | URL |
 |---|---|
 | OpenAlex (scholarly metadata, CC0): titles and abstracts of the papers PSI lists | https://openalex.org |
-| all-MiniLM-L6-v2 sentence-embedding model (Apache-2.0) | https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 |
+| snowflake-arctic-embed-s sentence-embedding model (Snowflake, Apache-2.0) | https://huggingface.co/Snowflake/snowflake-arctic-embed-s |
+| all-MiniLM-L6-v2 sentence-embedding model (Apache-2.0), the earlier model, kept for comparison | https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 |
 | all-MiniLM-L6-v2, ONNX build (Xenova) | https://huggingface.co/Xenova/all-MiniLM-L6-v2 |
 | Transformers.js 4.3.2 (Hugging Face, Apache-2.0) | https://github.com/huggingface/transformers.js |
 | ONNX Runtime Web (Microsoft, MIT) | https://github.com/microsoft/onnxruntime |
