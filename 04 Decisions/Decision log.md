@@ -88,7 +88,15 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** the Obsidian Git plugin commits and syncs 2 minutes after edits stop (`autoSaveInterval: 2` in `.obsidian/plugins/obsidian-git/data.json`). Pull stays every 5 minutes.
 - **Why:** the plugin settings are committed, so both team members share one value. Picking one together stops each person's sync from overwriting the other's setting.
 
+## D16 - PSI only, and a visual-first dashboard (proposed by Mylene, to be confirmed by Lama)
+- **When:** 15 Nov 2026
+- **Decided by:** Mylene, pending Lama
+- **What:** (1) nothing from outside PSI on the site: a "Beyond PSI" page with NASA-report figures was built and removed. (2) The dashboard leads with pictures and keeps text short: overview after a ChatGPT mockup, colour-grid ranking, question tiles, investigation tiles. (3) One real Moon photo (public domain, credited).
+- **Why:** rule 6 (every figure from PSI), and the first version felt overwhelming.
+- **Where:** branch `research-gaps-on-site`, commit `08ade33`, see [[2026-11-15 Step 5a visual dashboard]].
+
 ## Open decisions
+- **Confirm D16** (visual design) before merging into `main`.
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
 - **Make `Data-Beyond-Space` public and switch on GitHub Pages** (Settings, Pages, branch `main`, folder `/docs`).

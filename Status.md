@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sat 14 Nov 2026, 23:04 (Claude Code, VS Code)_
+_Last updated: Sun 15 Nov 2026 (Claude Code, VS Code)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -12,9 +12,11 @@ _Last updated: Sat 14 Nov 2026, 23:04 (Claude Code, VS Code)_
 
 - [x] Step 1 - central insight decided (D12) ([[2026-11-14 Step 1 central insight]])
 - [x] Steps 2 to 4 - snapshot moved into `Data-Beyond-Space`, data pipeline, checks, and first full dashboard ([[2026-11-14 Steps 2-4 data pipeline and dashboard]])
+- [x] Step 5a - visual dashboard on branch `research-gaps-on-site`, commit `08ade33`, not merged ([[2026-11-15 Step 5a visual dashboard]])
 
 ## In progress
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
+- [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
 
 ## Next
 - [ ] Make `Data-Beyond-Space` public and switch on GitHub Pages (branch `main`, folder `/docs`); test the public link in a private window

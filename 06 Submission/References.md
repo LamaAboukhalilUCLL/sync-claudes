@@ -45,4 +45,5 @@ Collected from the `doi` field of each record in `app/raw/` on 14 Nov 2026. Clic
 | NASA: Moon Base | https://www.nasa.gov/moonbase | Context for the central insight; linked on the site |
 | NASA Space Apps 2026: Flame in Freefall challenge statement | https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/ | Source of the Moon Base atmosphere: 30 % oxygen or more at 10.2 psi or less |
 | Python 3 standard library (no third-party packages) | https://docs.python.org/3/library/ | `app/fetch_snapshot.py`, `app/evidence_oxygen.py`, `fetch_papers.py` |
+| Moon nearside LRO 5000.jpg (Lunar Reconnaissance Orbiter mosaic; NASA/GSFC/Arizona State University; public domain) | https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg | Cropped photo at the bottom of the overview page; credited on the page and in `docs/img/CREDITS.md`. A real photo, not AI-generated |
 | OpenAlex (CC0 scholarly metadata) | https://openalex.org | Titles and abstracts for the publication DOIs listed in PSI ([[Publications and abstracts]]). Keep only if abstracts are used in the product |
