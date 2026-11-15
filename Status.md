@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 20:30 (Claude Code, for Lama). Code frozen at `7262f78`; Lama works on the slides._
+_Last updated: Sun 15 Nov 2026, 20:24 (Claude Code, for Lama). Code frozen at `7262f78`; Lama works on the slides._
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -43,10 +43,10 @@ _Last updated: Sun 15 Nov 2026, 20:30 (Claude Code, for Lama). Code frozen at `7
 
 ## In progress
 - [ ] A team member checks a sample of the AI labels: question labels (`topic_labels.json`), Ask test questions and word list (both marked unchecked).
-- [ ] **Waiting for Lama:** review and merge or drop branch `victor/ask-upgrade` ([[2026-11-15 Step 11b Ask upgrade (Victor)]]). Before the score goes live, Victor re-labels the 40 test questions and checks the glossary. The branch now also holds Step 11c, with a model switch for Lama to decide ([[2026-11-15 Step 11c search quality (Victor)]]).
-- [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
+- [x] ~~Waiting for Lama: review and merge or drop branch `victor/ask-upgrade`~~ Done: merged as pull request #6 (D28).
+- [ ] **Now (Lama):** project page text and the 7 slides. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
 - [ ] **Lama reviews the dashboard**: run it (see the build log), read every AI-written text, confirm or change D14.
-- [ ] **Lama approves the visual design (D16)** on branch `research-gaps-on-site`; then push and merge it into `main` through a pull request.
+- [x] ~~Lama approves the visual design (D16) on branch `research-gaps-on-site`~~ Obsolete: the live design is design B (Step 5d) and later steps; that branch was never merged.
 
 ## Next
 - [x] ~~Make `Data-Beyond-Space` public and switch on GitHub Pages~~ Done: the repository shows as public and the site is live (checked 15 Nov, 12:30). Still to do: open the link in a private window.
