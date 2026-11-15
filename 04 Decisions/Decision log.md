@@ -150,6 +150,12 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **What:** the NASA White Sands Test Facility table of 2007 (NTRS 20070018178) is shown on the Habitat page, marked as not from PSI and as an Earth test. It is never mixed into the PSI counts.
 - **Why:** it is the nearest public NASA evidence on solids in Moon Base air, and it sharpens the insight: tested on Earth, not confirmed in space. Reverses D16 for this one table. See [[2026-11-15 Step 10 Earth tests from White Sands and fixes]].
 
+## D26 - SI maps what NASA has written about each fire question (proposed method, not yet confirmed)
+- **When:** 15 Nov 2026
+- **Decided by:** Lama chose the idea. The method change (a large model labels, the small model is measured) was made by Claude Code after the small model failed, and **awaits her confirmation**.
+- **What:** all 925 passages labelled by question with machine-checked quotes; counts and overlaps on the Open questions page; the Ask search scored against the labels.
+- **Why:** it extends the coverage finding from tables to text, makes the SI produce a result, and replaces a claim about the search with a measurement. See [[2026-11-15 Step 12 what NASA wrote about each question]].
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
