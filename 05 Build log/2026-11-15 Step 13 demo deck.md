@@ -25,3 +25,11 @@ Open the Slides artifact "Flame in Freefall: Data Beyond Space" in Claude. Expor
 ## Next
 - Lama checks each slide in the viewer, then sets the public link and exports the PowerPoint.
 - Add the deck link to the project page.
+
+## Update, about 20:00: architecture deck
+Lama asked for a new structure: slide 1 shows the architecture of all components, each other slide shows the role of two components side by side. She chose to keep it in the Claude deck (the SharePoint .pptx can't be edited live from here) and to put the title details and the architecture together on slide 1.
+- Slide 1: team, six names, challenge, link, and a diagram in three layers: NASA sources (1 PSI snapshot, 2 White Sands tests), build and checks (3 SI texts, 4 build and checks), dashboard in the browser (5 to 12).
+- Slides 2 to 7: two components each, "What it does", "Why it helps", and one key number or a screenshot.
+- Texts drafted by Claude from the build logs and the live site; numbers only from the earlier brief and the build logs (24, 22, 26, 10.17, 7, 81, 0 of 24 and 3, 274, 43 %, 925, 0/3/3). To be read by Lama.
+- **To check:** slide 7 says "SI maps what NASA has written about each question" (Step 12). On the live site at about 19:55 (cache version 23) that part did not show yet. Delete the sentence if `si-coverage-2` is not live at submission.
+- Slide 6 names the Ask model as snowflake-arctic-embed-s (Victor's Step 11c, merged with pull request #6).
