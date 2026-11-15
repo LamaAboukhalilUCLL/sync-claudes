@@ -1,6 +1,6 @@
 # Status
 
-_Last updated: Sun 15 Nov 2026, 14:15 (Claude, Cowork, for Victor)_
+_Last updated: Sun 15 Nov 2026, 14:50 (Claude, Cowork, for Victor)_
 
 ## Done
 - [x] Step 0 - folder and vault set up ([[2026-11-14 Step 0 setup]])
@@ -22,6 +22,7 @@ _Last updated: Sun 15 Nov 2026, 14:15 (Claude, Cowork, for Victor)_
 - [x] Step 8 - introduction with route map, and Habitat page, live (`f554eff`) ([[2026-11-15 Step 8 introduction, route map and habitat]])
 - [x] Review of the AI-written texts by Victor: 11 wording fixes, build and validate pass; **local, not pushed, waiting for Lama** ([[2026-11-15 Review of AI-written texts (Victor)]])
 - [x] Visible "made with AI assistance" marks on the AI-drawn route map and habitat schematic; footer, metadata, Data page and README name the drawings; **local, not pushed, waiting for Lama** ([[2026-11-15 AI marks on drawings (Victor)]])
+- [x] Fresh clone rebuilds and validates; all 24 DOIs resolve; live downloads and Ask work ([[2026-11-15 Eligibility checks and fresh-clone test (Victor)]]). **Still open:** every member confirms registration in the Universal Event; private-window and phone check; Firefox click-through
 
 ## In progress
 - [ ] **17:00**: Lama writes the project page text and the demo. Compiled fields ready to paste (NASA data with all 24 DOIs, references, Use of SI draft, checked numbers): [[Project page fields (draft)]].
