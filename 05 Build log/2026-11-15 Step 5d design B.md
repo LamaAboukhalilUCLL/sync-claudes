@@ -19,6 +19,13 @@ Two previews were built from the real data and shown as images, nothing pushed: 
 - **Overview as one piece:** photograph and headline, three figures, Figure 1, three places with NASA photographs (replacing the clickable journey), the seven closest investigations, the six open questions.
 - **Ranking:** plain marks (filled, half, ring, blank for "the table does not say") in a rules-only table.
 
+## Adjusted the same morning, on Lama's feedback (D20)
+- The Moon is the fixed background of every page, shown whole, instead of a cropped disc in the hero.
+- Data points and bars are coloured again by what burns (NASA's chart palette). NASA Red stays reserved for the Moon Base.
+- Frames are back where they help: charts, tables, the key figures, question blocks, detail blocks.
+- The three clickable stops (Earth, low Earth orbit, Moon Base) are back in place of the three photographs.
+Commit after `97af2e5` in `Data-Beyond-Space`.
+
 ## How it was tested
 Headless Chrome screenshots at 1440 px of the overview, an investigation page and the coverage map; build and validation pass. **Not tested:** a person clicking through, phones, Firefox and Safari; the ranking, questions and data pages were not looked at after the change.
 

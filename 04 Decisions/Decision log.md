@@ -114,6 +114,11 @@ One entry per decision: what, why, who decided, when. Newest at the bottom.
 - **Changes D18:** fuel types no longer have their own colours (tests are grey, solid materials white). The red and the greys remain NASA's values.
 - **Why:** the earlier look read as AI-made. See [[2026-11-15 Step 5d design B]].
 
+## D20 - Adjustments to design B
+- **When:** 15 Nov 2026
+- **Decided by:** Lama
+- **What:** keep B's type and black page, but: the Moon whole and fixed in the background; data points coloured by what burns; frames where they add clarity; the clickable journey instead of photographs. This restores the colours of D18 and partly reverses D19's "one accent".
+
 ## Open decisions
 - **Confirm D14** (ranking conditions) and the D6 question inside it.
 - **Project name and wording** on the site (working title: "Flame in Freefall: Moon Base fire data coverage").
