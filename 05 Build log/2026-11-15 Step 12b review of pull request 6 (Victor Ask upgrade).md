@@ -29,7 +29,7 @@ Pull request #6, branch `victor/ask-upgrade`, 13 commits, last `01e1991` (19:20)
 - Model switch to snowflake-arctic-embed-s: same score with the word bonus, clearly better by meaning alone (helps questions that share no word with NASA's text); download 62 MB instead of about 50 MB; both models stay in the repository.
 - Merge order (Status): this pull request first, then `si-coverage` re-applied on top, keeping Victor's score on the Ask page.
 
-## Update, about 20:05: two fixes on branch `ask-fixes`
+## Update, about 19:40: two fixes on branch `ask-fixes`
 Lama asked for findings 2 and 4. Claude Code was not allowed to push onto Victor's branch, so the fixes are on a new branch **`ask-fixes`**, made from Victor's latest commit (`46cac59`, 19:29) plus two commits:
 - `718b8df`: "drop" removed from the word list (`ask_glossary.json` and its copy inside `passages.json`; vectors untouched, so `ask_eval.json` stays valid; no test question contains "drop").
 - `a688c87`: "Read it in context" also marks the passage when the link is opened directly (the page loads the passages itself). Cache version 23.

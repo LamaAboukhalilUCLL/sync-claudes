@@ -37,7 +37,7 @@ Lama said "merge". Claude Code merged `si-coverage` into `main` (`bfe1f4b`) and 
 - **To re-apply later:** after Victor's branch is merged, revert the revert (`git revert ee99c38`) or merge `si-coverage` again with that revert undone, then resolve the overlap on the Ask page (keep one score) and rebuild `topics.json` with the model then in use.
 - Lesson recorded: pull the vault and read Status before any merge or push to `main`.
 
-## Update, about 20:10: re-applied on top of Victor's Ask upgrade (branch `si-coverage-2`, not merged)
+## Update, about 19:50: re-applied on top of Victor's Ask upgrade (branch `si-coverage-2`, not merged)
 Lama merged pull request #6 (`33968e0`). Before touching `main`, Claude Code checked Status, open pull requests (none) and teammates' branches (none newer). Then:
 - Branch `ask-fixes` (the two review fixes) was merged into `main` (`bb98735`) and pushed; live with cache version 23 (checked: "drop" gone from the served word list, the context-link fix in the served code).
 - Branch **`si-coverage-2`** (`c0c6270`) brings Step 12 back by undoing the revert, with four conflicts resolved in favour of Victor's version plus this work. One score on the Ask page (Victor's). `build_topics.mjs` now measures with the page's own code (`docs/ask.js`) and the model the site loads (snowflake-arctic-embed-s). Result: of the passages the Ask page shows for the five fire questions with enough labels, 25 of 40 address the question (63 %); words alone 21 of 40 (53 %); meaning alone 11 of 20 (55 %, fewer passages pass its floor). "Has any fire been tested in Moon Base air at all?" still gets 0 of 8.
